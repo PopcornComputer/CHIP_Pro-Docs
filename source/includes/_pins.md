@@ -85,7 +85,7 @@
 | -------------- |
 | EINT3 - External Interrupt source 3 |
 | EINT4 - External Interrupt source 4 |
-| 
+| - |
 | SPI2-CS0 - Serial Peripheral Interface chip select |
 | SPI2-CLK - SPI clock |
 | SPI2-MOSI - SPI Master out slave in |
