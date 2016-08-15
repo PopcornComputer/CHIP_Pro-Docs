@@ -2,7 +2,7 @@
 
 All documentation is written in markdown and staged on github pages. Published documentation is viewable on the github pages.
 
-If you want to add or modify a document, add your markdown file to the [includes](https://github.com/NextThingCo/DIP-Docs/tree/master/source/includes) directory and make a pull request. You can use [Github markdown](https://help.github.com/articles/github-flavored-markdown/) or [regular markdown](https://daringfireball.net/projects/markdown/syntax). 
+If you want to add or modify a document, add your markdown file to the [includes](https://github.com/NextThingCo/Crumb-Docs/tree/master/source/includes) directory and make a pull request. You can use [Github markdown](https://help.github.com/articles/github-flavored-markdown/) or [regular markdown](https://daringfireball.net/projects/markdown/syntax). 
 
 Each include represents a top-level topic in the left-hand navigation if it is in the list of includes in `index.html`.
 
