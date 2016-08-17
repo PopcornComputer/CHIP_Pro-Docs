@@ -1,6 +1,6 @@
 # Overview
 
-Designed to make great products, the NTC Crumb computer is powerful, simple to program, open source, and easy-to-manufacture in quantities from 1 to 1 million. Smaller than a couple quarters, Crumb is ready for your big ideas with built-in storage, memory, WiFi networking, Bluetooth LE, audio input, USB, power management, battery charging, and all the best i/o, including UART, PWM, I2C, and I2S. Open source hardware gives you the confidence that you need to build with it.
+Designed to make great products, the NTC Crumb computer is powerful, simple to program, open source, and easy-to-manufacture in quantities from 1 to 1 million. Smaller than a couple quarters, Crumb is ready for your big ideas with built-in storage, memory, WiFi networking, Bluetooth LE, audio input, USB, power management, battery charging, and all the best i/o, including UART, PWM, I2C, and I2S. Open source hardware gives you the confidence that you need to build.
 
 ######CPU
 

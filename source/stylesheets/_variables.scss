@@ -77,6 +77,12 @@ $phone-width: $tablet-width - $nav-width; // min width before reverting to mobil
   font-size: 15px;
 }
 
+%print-font {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
+  font-size: 16px;
+}
+
+
 %header-font {
   @extend %default-font;
   font-family: Monda, "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;

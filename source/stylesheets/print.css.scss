@@ -23,21 +23,37 @@ $print-color: #999;
 $print-color-light: #ccc;
 $print-font-size: 12px;
 
+@media print {
+    h1 {page-break-before: always;}
+}
+
 body {
-  @extend %default-font;
+  @extend %print-font;
+  margin-left: 25mm;
+  margin-right: 25mm;
 }
 
 .tocify, .toc-footer, .lang-selector, .search, #nav-button {
   display: none;
 }
 
-.tocify-wrapper>img {
-  margin: 0 auto;
-  display: block;
+.tocify-wrapper {
+
+  // This is the logo at the top of the ToC
+  &>img {
+    display: block;
+  }
+  & .nav-bar-logo {
+    text-align: center;
+    
+    & img {
+      width: 40%;
+    }
+  }
 }
 
 .content {
-  font-size: 12px;
+  font-size: 16px;
 
   pre, code {
     @extend %code-font;
@@ -63,11 +79,13 @@ body {
 
   table {
     border: 1px solid $print-color;
+    margin-top: 2em;
     tr {
       border-bottom: 1px solid $print-color;
     }
     td,th {
       padding: 0.7em;
+    border: 1px solid #DEDEDE;
     }
   }
 
@@ -116,6 +134,7 @@ body {
 
   h5, h6 {
     text-transform: uppercase;
+    font-size: 1em;
   }
 
   aside {
