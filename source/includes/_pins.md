@@ -14,8 +14,8 @@
 | BAT - LiPo battery input |
 | PWM0 - Pulse Width Modulation bus 0 |
 | PWM1 - Pulse Width Modulation bus 1 |
-| TWI1-SDA - I2C Data line |
 | TWI1-SCK - I2C Clock line |
+| TWI1-SDA - I2C Data line |
 | UART2-TX - UART bus 2 transmit |
 | UART2-RX - UART bus 2 receive |
 | UART2-CTS - UART bus 2 clear to send |
