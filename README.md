@@ -1,4 +1,4 @@
-# Next Thing CRUMB Documentation
+# Next Thing C.H.I.P. Pro Documentation
 
 All documentation is written in markdown and staged on github pages. Published documentation is viewable on the github pages.
 

@@ -1,6 +1,6 @@
 # Pin Descriptions
 
-![Crumb pins](images/crumb_pinout.jpg)
+![C.H.I.P. Pro pins](images/CHIP-Pro-pins.jpg)
 
 | Left Side |
 | -------------- |
