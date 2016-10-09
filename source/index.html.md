@@ -1,5 +1,5 @@
 ---
-title: Next Thing Co CRUMB Reference
+title: Next Thing Co. C.H.I.P. Pro Documentation 
 
 language_tabs:
 
@@ -10,6 +10,7 @@ includes:
   - overview
   - pins
   - pinusage
+  - faq
   - todo
 
 search: true

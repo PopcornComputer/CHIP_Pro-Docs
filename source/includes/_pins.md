@@ -68,7 +68,7 @@
 | MICIN2 - mic in channel 2 |
 | VMIC - adjustable phantom power for different mics |
 
-## Alternate Pin DESCRIPTIONS
+## Alternate Pin Descriptions
 
 | Left Side |
 | -------------- |

@@ -1,6 +1,6 @@
 # To Do
 
-* Document CrumbOS
+* Document GadgetOS
  * buildroot procedure
  * what is and is not included in the buildroot
  * accessing hardware (GPIO, I2C)
@@ -9,8 +9,8 @@
  * Bluetooth
 
 * Hardware
- * Manufacturing with Crumb
- * Developing with Crumb (how to breadboard or DIY a dev board or something)
+ * Manufacturing with C.H.I.P. Pro
+ * Developing with C.H.I.P. Prot (how to breadboard or DIY a dev board or something)
 
 * Differences from C.H.I.P.
 

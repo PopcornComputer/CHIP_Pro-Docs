@@ -1,6 +1,6 @@
-# GR8 Pins in CRUMB
+# GR8 Pins in C.H.I.P. Pro
 
-| Function | Pin Name | On CRUMB  | Future Use | Multi2    | Multi3    | Multi4    | Multi5    | Multi6 | Multi7 |            | 
+| Function | Pin Name | On C.H.I.P. Pro | Future Use | Multi2    | Multi3    | Multi4    | Multi5    | Multi6 | Multi7 |            | 
 |----------|----------|-----------|------------|-----------|-----------|-----------|-----------|--------|--------|------------| 
 | PB(21)   | PB0      |           | TWI0       | TWI0_SCK  |           |           |           |        |        |            | 
 |          | PB1      |           | TWI0       | TWI0_SDA  |           |           |           |        |        |            | 
