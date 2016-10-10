@@ -13,18 +13,17 @@ C.H.I.P. Pro is a $16 System-in-Module that is designed to be embedded in your n
 
 ![GR8](images/GR8.jpg)
 
-* Next Thing Co. GR8 1GHz ARM Cortex-A8 32-bit processor
-* Mali-400 GPU
+* 1GHz Next Thing Co. GR8 processor - ARM Cortex-A8 with ARMv7 instruction set and NEON coprocessor
+* Mali-400 supporting OpenGL ES1.1/2.0 and OpenVG 1.1
 * 256MB DDR3 RAM
 * 512MB NAND Flash Storage
 
 ##Interfaces
 
-* TWI
+* 1x Two Wire Interface
 * 2x UART (1x 2-wire and 1x 4-wire)
 * SPI enabling SD card interface 
 * 2x PWM
-* GPIO 
 * 6-bit ADC
 * I2S Digital Audio
 * S/PDIF IEC-60958 Digital Audio Input and Output 
@@ -33,6 +32,7 @@ C.H.I.P. Pro is a $16 System-in-Module that is designed to be embedded in your n
 	* USB 2.0 OTG
 * CMOS Sensor Interface
 * 3.3V DC supply
+* TKTK GPIO
 
 ##Audio
 
