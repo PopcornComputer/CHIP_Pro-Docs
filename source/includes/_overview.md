@@ -6,7 +6,7 @@
 C.H.I.P. Pro is a system-on-module (SoM) that has 512MB of high-speed NAND storage flashed with our GadgetOS. It can be powered by USB or battery, intelligently managed by the AXP209 power management unit.
 
 
-The SoM is powered by GR8, a system-in-package (SiP) that was designed by us. GR8 features a 1GHz Allwinner R8 ARM Cortex-A8 processor, Mali400 GPU, and 256MB of Nanya DDR3 DRAM. in a 14mm x 14mm FBGA package. 
+C.H.I.P. Pro is powered by GR8, a system-in-package (SiP) that was designed by us. GR8 features a 1GHz Allwinner R8 ARM Cortex-A8 processor, Mali400 GPU, and 256MB of Nanya DDR3 DRAM. in a 14mm x 14mm FBGA package. 
 
 The module offers all the popular interfaces you'd expect. With two UARTs, a Two Wire Interface, a parallel camera interface, SPI, two PWM channels, a USB 2.0 OTG, and a USB 2.0 Host, C.H.I.P. Pro is packed full of I/O expandability. Comprehensive audio handling includes a built-in 24-bit ADC/DAC for analog audio, One Wire Audio digital out, and I2S digital audio for interfacing with professional audio codecs.
 
@@ -14,7 +14,7 @@ C.H.I.P Pro is CE, IC, and FCC part 15 modularly certified, making integration i
 
 ![C.H.I.P. Pro](images/CHIP-Pro-Side-Crop.png)
 
-Rated to operate between 2.9V-6V in temperatures ranging between 0 and 70 degrees Celsius and measures 45mm x 30mm.
+C.H.I.P. Pro is rated to operate between 2.9V-6V in temperatures ranging between 0 and 70 degrees Celsius and measures 45mm x 30mm.
 
 We can't wait to see how you'll integrate C.H.I.P Pro in to your next product.
 
@@ -22,14 +22,13 @@ We can't wait to see how you'll integrate C.H.I.P Pro in to your next product.
 
 ![C.H.I.P. Pro Block Diagram](images/CHIP-Pro-Block-Diagram.png)
 
-##CPU
+##SiP
 
 ![GR8](images/GR8-Crop.png)
 
 * 1GHz Next Thing Co. GR8 ARM Cortex-A8 with ARMv7 instruction set and NEON coprocessor
-* Mali-400 supporting OpenGL ES1.1/ 2.0 and OpenVG 1.1
+* Mali-400 GPU supporting OpenGL ES1.1/ 2.0 and OpenVG 1.1
 * 256MB DDR3 RAM
-* 512MB NAND flash storage
 
 
 ##Interfaces
