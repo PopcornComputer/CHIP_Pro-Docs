@@ -20,7 +20,7 @@ We can't wait to see how you'll integrate C.H.I.P Pro in to your next product.
 
 ##Block Diagram
 
-![C.H.I.P. Pro Block Diagram](images/CHIPProBlock.jpg)
+![C.H.I.P. Pro Block Diagram](images/CHIP-Pro-Block-Diagram.png)
 
 ##CPU
 
@@ -79,7 +79,7 @@ We can't wait to see how you'll integrate C.H.I.P Pro in to your next product.
 
 ##Package Specifications
 
-![Mechanical Drawing](image/CHIPProMechanical.jpg)
+![Mechanical Drawing](images/CHIP-Pro-PCB.png)
 
 * 45mm x 30mm board
 * 38.1mm x 24mm SMT or through-hole
