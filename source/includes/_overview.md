@@ -60,7 +60,7 @@ We can't wait to see how you'll integrate C.H.I.P Pro in to your next product.
 
 ##Wireless Connectivity
 
-* Realtek 8723BS Combination Module
+* Realtek 8723DS Combination Module
 * Bluetooth 4.0 LE
 * WiFi 802.11 b/g/n
 * uFL antenna connector
