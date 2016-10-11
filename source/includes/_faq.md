@@ -56,9 +56,6 @@ Yes! GR8 has the same Allwinner R8 processor that is in C.H.I.P., so your C.H.I.
 ## What is the GR8 package?
 252 ball FBGA package.
 
-## If I order multiple GR8s, do I need multiple GR8 Modules?
-It depends on your project. We offer GR8 separately so you can layout your PCB in anyway you want. The best way to get started using GR8 is the C.H.I.P. Pro Evaluation Kit. It will get you up and running with GR8 in minutes.
-
 ## I have a prototype of my product, is GR8 right for me?
 Depends! For most customers, C.H.I.P. Pro will be the best way to work with GR8. We’ve already sourced 127 components for you and include all the working drivers. If you’ve tried C.H.I.P. Pro but are looking for a differently layout, then GR8 is a great option.
 
