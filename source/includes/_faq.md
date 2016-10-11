@@ -1,21 +1,20 @@
 # C.H.I.P. Pro FAQ
 
-## What are C.H.I.P. Pro’s specifications?
+## What are the C.H.I.P. Pro specifications?
 * 1GHz Next Thing Co. GR8 processor - ARM Cortex-A8 with ARMv7 instruction set and NEON instruction set 
-* Mali-400 supporting OpenGL ES1.1/2.0 and OpenVG 1.1
+* Mali-400 supporting OpenGL ES1.1 /2.0 and OpenVG 1.1
 * 512MB NAND flash storage
 * 256MB DDR3 RAM
 * WiFi B/G/N
-* Bluetooth 4.0 LE
+* Bluetooth 4.2 LE
 * I2S
 * 1x Two Wire Interface 
 * 2x UART (1x 2-wire and 1x 4-wire)
 * 2x SPI controllers
-* IR
-* TKTK GPIO
+* 27 GPIO
 
 ## Does C.H.I.P. Pro have USB?
-Yes, C.H.I.P. Pro has a microUSB 2.0 OTG controller. You can breakout 2 full-size USB ports on a PCB.
+Yes, C.H.I.P. Pro has a microUSB 2.0 OTG controller, plus you can breakout 2 full-size USB ports on a PCB.
 
 ## How much does C.H.I.P. Pro cost?
 C.H.I.P. Pro costs $16.
@@ -35,7 +34,7 @@ Yes, you can see our design files in our [git repository](https://github.com/Nex
 Nope! We made C.H.I.P. Pro to enable our C.H.I.P.ster community to scale their C.H.I.P. projects into mass production.
 
 ## Where can I buy the C.H.I.P. Pro?
-Currently we’re offering the C.H.I.P. Pro Evaluation Kit for $49 in our web store with an estimated shipping by the end of this year. Individual C.H.I.P. Pros will be available in Q1 of 2017.
+Currently we’re offering the C.H.I.P. Pro Alpha Kit for $49 in our web store with an estimated shipping by the end of this year. C.H.I.P. Pro will be available in Q1 of 2017.
 
 ##  How many may I order?
 You may order 1 to 1 million or more! For bulk orders, contact [sales@nextthing.co](sales@nextthing.co).
@@ -54,55 +53,29 @@ Yes! GR8 has the same Allwinner R8 processor that is in C.H.I.P., so your C.H.I.
 ## What are the GR8’s dimensions?
 14mm x 14mm, 0.8mm pitch.
 
-## How much does GR8 cost?
-GR8 costs $6.00 and comes with the AXP-209 power management chip, for which it is optimized.
-
 ## What is the GR8 package?
 252 ball FBGA package.
 
 ## If I order multiple GR8s, do I need multiple GR8 Modules?
 It depends on your project. We offer GR8 separately so you can layout your PCB in anyway you want. The best way to get started using GR8 is the C.H.I.P. Pro Evaluation Kit. It will get you up and running with GR8 in minutes.
 
-## What countries will you ship GR8 to?
-We only ship to TKTK countries through our web store currently. We’re talking with distributors currently to offer to more countries.
-
 ## I have a prototype of my product, is GR8 right for me?
-Depends! For most customers, C.H.I.P. Pro will be the best way to work with  GR8. We’ve already sourced 127 components for you and include all the working drivers. If you’ve tried C.H.I.P. Pro but are looking for a differently layout, the GR8 is a great option.
+Depends! For most customers, C.H.I.P. Pro will be the best way to work with GR8. We’ve already sourced 127 components for you and include all the working drivers. If you’ve tried C.H.I.P. Pro but are looking for a differently layout, then GR8 is a great option.
 
 ## What Operating Systems run on GR8?
-GadgetOS
-
-## Is GR8 available from any distributors?
-TKTK
+GadgetOS is an optimised version of Linux for GR8 and CHIP Pro.
 
 ## I’m a distributor, can I carry GR8?
-Yeah! We want to talk to you. Contact us at sales@nextthing.co.
-
-## Is GR8 Open Hardware?
-Yes? We tell you exactly whats in it? No? We dont’ show how the two wafers combine?
-
-## Does GR8 come pre-flashed with an operating system?
-GR8 doesn’t come with an operating system pre-flashed, but once you get GR8 TKTK
+Sure! We want to talk to you. Contact us at sales@nextthing.co.
 
 ## Do you offer custom flashing solutions?
 For C.H.I.P. Pro yes! For GR8, no, but you still have access to GadgetOS and our cloud build tools to provide a real simple flashing solution for your prototypes.
 
-## How much power does GR8 consume?
-TKTK
-
-## How do you power GR8?
-TKTK
-
 ## Why is there less memory than C.H.I.P.?
-C.H.I.P. Pro is optimized for products. When you’re not needing to drive an HD display, your RAM is much more efficient. This is one of the decisions we’ve made that allows us to sell C.H.I.P. Pro at the price we’re able. If you’re curious how your code will run on C.H.I.P. Pro, try the C.H.I.P. Pro Evaluation Kit. We think you’ll be surprised.
+C.H.I.P. Pro is optimized for products. When you don't need to drive an HD display, your RAM is much more efficient. This is one of the decisions we’ve made that allows us to sell C.H.I.P. Pro at the price we’re able. If you’re curious how your code will run on C.H.I.P. Pro, try the C.H.I.P. Pro Alpha Kit. We think you’ll be surprised.
 
-## What I/O is available on GR8?
-
-
-## How can I order a LOT of GR8 modules for my product?
+## How can I order a LOT of C.H.I.P. Pro?
 Please contact us directly at sales@nextthing.co.
 
 ## Who are some of the companies using GR8 in their products?
 Oh man. We cannot wait to tell you. Stay tuned. Stay very very tuned.
-
-

@@ -1,31 +1,36 @@
 # C.H.I.P. Pro Overview
 
-![C.H.I.P. Pro](images/CHIPPro.jpg)
 
-At Next Thing Co., we’ve been working to integrate computer hardware in products for years. C.H.I.P. Pro is a product development platform built around our GR8 system-in-package: a 1GHz Allwinner R8 ARM Cortex-A8 processor,  Mali-400 GPU, and 256MB of Nanya DDR3 DRAM combine in a 14mm x 14mm FBGA package. 
+![C.H.I.P. Pro](images/CHIP-Pro-Side-ISO.png)
 
-Joining the GR8 on the C.H.I.P. Pro are 512MB of built-in high-speed NAND flash storage pre-flashed with our GadgetOS, and an AXP209 power management unit supporting either USB or battery power.
+C.H.I.P. Pro is a system-on-module (SoM) that has 512MB of high-speed NAND storage flashed with our GadgetOS. It can be powered by USB or battery, intelligently managed by the AXP209 power management unit.
 
-C.H.I.P. Pro offers all the popular interfaces you’d expect. With 2 UARTs, a TWI, a CMOS camera interface sensor, SPI and I2S buses, 2 PWM channels, a USB 2.0 OTG, and a USB 2.0 Host, C.H.I.P. Pro is packed full of I/O expandability.
 
-An FCC/CE/IC certified Realtek 8723BS combination module provides WiFi B/G/N and Bluetooth 4.0 Low-Energy and we’ve added a uFL antenna connector in case you’d like to boost the transmit and receive range.
+The SoM is powered by GR8, a system-in-package (SiP) that was designed by us. GR8 features a 1GHz Allwinner R8 ARM Cortex-A8 processor, Mali400 GPU, and 256MB of Nanya DDR3 DRAM. in a 14mm x 14mm FBGA package. 
 
-C.H.I.P. Pro is rated to operate between 2.9V-6V in temperatures ranging between -25 and 85 degrees Celsius, and we can’t wait to see how you’ll implement it in your next product.
+The module offers all the popular interfaces you'd expect. With two UARTs, a Two Wire Interface, a parallel camera interface, SPI, two PWM channels, a USB 2.0 OTG, and a USB 2.0 Host, C.H.I.P. Pro is packed full of I/O expandability. Comprehensive audio handling includes a built-in 24-bit ADC/DAC for analog audio, One Wire Audio digital out, and I2S digital audio for interfacing with professional audio codecs.
 
+C.H.I.P Pro is CE, IC, and FCC part 15 modularly certified, making integration into end products easy. The on-board Realtek 8723DS combination module provides compliant Wi-Fi B/G/N and Bluetooth 4.2 Low-Energy connectivity. A software controlled antenna path selects between the on-board chip antenna or a uFL antenna connector where several pre-certified antennas can be added to boost wireless transmit and receive range. 
+
+![C.H.I.P. Pro](images/CHIP-Pro-Side-Crop.png)
+
+Rated to operate between 2.9V-6V in temperatures ranging between 0 and 70 degrees Celsius and measures 45mm x 30mm.
+
+We can't wait to see how you'll integrate C.H.I.P Pro in to your next product.
 
 ##Block Diagram
 
 ![C.H.I.P. Pro Block Diagram](images/CHIPProBlock.jpg)
 
-
 ##CPU
 
-![GR8](images/GR8.jpg)
+![GR8](images/GR8-Crop.png)
 
 * 1GHz Next Thing Co. GR8 ARM Cortex-A8 with ARMv7 instruction set and NEON coprocessor
 * Mali-400 supporting OpenGL ES1.1/ 2.0 and OpenVG 1.1
 * 256MB DDR3 RAM
 * 512MB NAND flash storage
+
 
 ##Interfaces
 
@@ -39,9 +44,9 @@ C.H.I.P. Pro is rated to operate between 2.9V-6V in temperatures ranging between
 * 2x USB HS/FS/LS
 	* USB 2.0 Host
 	* USB 2.0 OTG
-* CMOS Sensor Interface
+* Parallel Camera Interface 
 * 3.3V DC supply
-* TKTK GPIO
+* 27 GPIO
 
 ##Audio
 
@@ -64,16 +69,13 @@ C.H.I.P. Pro is rated to operate between 2.9V-6V in temperatures ranging between
 
 ##Operating System
 
-* GadgetOS
+* GadgetOS, an Linux optimized for GR8 and C.H.I.P. Pro
 
 ##Electrical Characteristics
 
 * 2.9V to 4.3V 
 * -25 to 85 degrees Celsius 
 
-##Friendly Test Points
-
-* List test points
 
 ##Package Specifications
 
@@ -81,6 +83,3 @@ C.H.I.P. Pro is rated to operate between 2.9V-6V in temperatures ranging between
 
 * 45mm x 30mm board
 * 38.1mm x 24mm SMT or through-hole
-
-TKTK add link to mech doc TKTK
-

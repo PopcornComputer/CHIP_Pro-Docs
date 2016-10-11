@@ -1,106 +1,97 @@
 # Pin Descriptions
 
-![C.H.I.P. Pro pins](images/CHIP-Pro-pins.jpg)
+## TWI
+Pin Number | Port | Pin Name | Signal Description | Type 
+-------------- | -------------- | -------------- | -------------- | --------------
+11 | PB16 | TWI1-SCK | TWI0 Clock | I/O
+12 | PB15 | TWI1-SDA | TWI0 Data/Address | I/O
 
-| Left Side |
-| -------------- |
-| GND - ground |
-| VCC-3V3 - 3.3 Volt DC |
-| VCC-ACC - Programmable 5 Volt DC |
-| CHG-IN - 5 Volt DC in to charge battery and provide power |
-| PWRON - power on |
-| GND - ground |
-| TS - analog temperature sensor input |
-| BAT - LiPo battery input |
-| PWM0 - Pulse Width Modulation bus 0 |
-| PWM1 - Pulse Width Modulation bus 1 |
-| TWI1-SCK - I2C Clock line |
-| TWI1-SDA - I2C Data line |
-| UART2-TX - UART bus 2 transmit |
-| UART2-RX - UART bus 2 receive |
-| UART2-CTS - UART bus 2 clear to send |
-| UART2-RTS - UART bus 2 request to send |
+## PWM
+Pin Number | Port | Pin Name | Signal Description | Type 
+-------------- | -------------- | -------------- | -------------- | --------------
+9 | PB2 | PWM0 | Pulse Width Module Channel0 Output | O
+10 | PG13 | PWM1 | Pulse Width Module Channel1 Output | O
 
-| Top Side |
-| -------------- |
-| GND - ground |
-| USB 0 (-) - USB OTG negative |
-| USB 0 (+) - USB OTG positive |
-| GND - ground |
-|  |
-| GND - ground |
-| USB 1 (-) - USB Host negative |
-| USB 1 (+) - USB Host positive |
-| GND - ground |
+## I2S
+Pin Number | Port | Pin Name | Signal Description | Type 
+-------------- | -------------- | -------------- | -------------- | --------------
+21 | PB5 | I2S-MCLK | I2S Master Clock | O
+22 | PB6 | I2S-BCLK | I2S Bit Clock | I/O
+23 | PB7 | I2S-LRCK | I2S Left/Right Channel Select Clock | I/O
+24 | PB8 | I2S-DO | I2S Data Output | O
+25 | PB9 | I2S-DI | I2S Data Input | I
 
-| Right Side |
-| -------------- |
-| GND - ground |
-| UART1-TX - UART bus 1 transmit |
-| UART1- - RXUART bus 1 receive |
-| LRADC0 - Low Res (6-bit) analog to digital conversion |
-| CSIPCK - CMOS Sensor interface pixel clock |
-| CSIMCLK - CMOS Sensor interface master clock |
-| CSIHSYNC - CMOS Sensor interface horizontal sync |
-| CSIVSYNC - CMOS Sensor interface vertical sync |
-| CSI-D0 - CMOS Sensor interface, data pin 0 |
-| CSI-D1 - CMOS Sensor interface, data pin 1 |
-| CSI-D2 - CMOS Sensor interface, data pin 2 |
-| CSI-D3 - CMOS Sensor interface, data pin 3 |
-| CSI-D4 - CMOS Sensor interface, data pin 4 |
-| CSI-D5 - CMOS Sensor interface, data pin 5 |
-| CSI-D6 - CMOS Sensor interface, data pin 6 |
-| CSI-D7 - CMOS Sensor interface, data pin 7 |
+## OWA – One Wire Audio 
+Pin Number | Port | Pin Name | Signal Description | Type 
+-------------- | -------------- | -------------- | -------------- | --------------
+9 | PB2 | OWA-DO | OWA Data Output | O
 
-| Bottom Side |
-| -------------- |
-| GND - ground |
-| HPL - headphone audio out Left |
-| HPCOM - headphone audio ground |
-| HPR - headphone audio out Right |
-| I2S-MCLK - Inter-IC Sound Bus master clock |
-| I2S-BCLK - I2S bit clock |
-| I2S-LCLK - I2S sample clock (frame sync) |
-| I2S-DO - I2S data in |
-| I2S+SPDIF-DI - I2S data out |
-| AGND - analog ground |
-| MICIN1 - mic in channel 1 |
-| MICIN2 - mic in channel 2 |
-| VMIC - adjustable phantom power for different mics |
+## SPI – Serial Peripheral Interface 
+Pin Number | Port | Pin Name | Signal Description | Type 
+-------------- | -------------- | -------------- | -------------- | --------------
+41 | PE0 | SPI2-CS0 | SPI2 Chip Slect Signal (active low) | I/O
+40 | PE1 | SPI2-CLK | SPI2 Clock Signal | I/O
+39 | PE2 | SPI2-MISO | SPI2 Master Data In, Slave Data Out | I/O
+38 | PE3 | SPI2-MOSI | SPI2 Master Data Out, Slave Data In | I/O
 
-## Alternate Pin Descriptions
+## UART – Universal Asynchronous Receiver/Transmitter
+Pin Number | Port | Pin Name | Signal Description | Type 
+-------------- | -------------- | -------------- | -------------- | --------------
+44 | PG3 | UART1-TX | UART0 Data Transmit | O
+43 | PG4 | UART1-RX | UART0 Data Receive | I
+13 | PD2 | UART2-TX | UART2 Data Transmit | I
+14 | PD3 | UART2-RX | UART2 Data Receive | O
+15 | PD4 | UART2-CTS | UART2 Data Clear to Send | I
+16 | PD5 | UART2-RTS | UART2 Data Request to Send | I
 
-| Left Side |
-| -------------- |
-| SPDIF-DO SPDIF (Sony/Phillips Digital Interface Format) data out |
-| EINT13 - External Interrupt source 13 |
-| GPIO - General Purpose In/Out |
-| GPIO - General Purpose In/Out |
-| LCD-D2 - LCD data pin 2 |
-| LCD-D3 - LCD data pin 3 |
-| LCD-D4 - LCD data pin 4 |
-| LCD-D5 - LCD data pin 5 |
+## CSI – Camera Sensor Interface
+Pin Number | Port Name | Pin Name | Signal Description | Type 
+-------------- | -------------- | -------------- | -------------- | --------------
+41 | PE0 | CSI-PCLK | CSI Pixel Clock | I
+40 | PE1 | CSI-MCLK | CSI Master Clock | O
+39 | PE2 | CSI-HSYNC | CSI Horizontal Sync | I
+38 | PE3 | CSI-VSYNC | CSI Vertical Sync | I
+37-30 | PE4-PE11 | CSI-Data[7:0] | CSI Data Bit | I
 
-| Right Side |
-| -------------- |
-| EINT3 - External Interrupt source 3 |
-| EINT4 - External Interrupt source 4 |
-| - |
-| SPI2-CS0 - Serial Peripheral Interface chip select |
-| SPI2-CLK - SPI clock |
-| SPI2-MOSI - SPI Master out slave in |
-| SPI2-MISO - SPI Master in slave out |
-| SDC2-D0 - Secure Digital Multimedia Card Data 0 |
-| SDC2-D1 - SD Card Data 1 |
-| SDC2-D2 - SD Card Data 2 |
-| SDC2-D3 - SD Card Data 3 |
-| SDC2-CMD - SD Card Command Line |
-| SDC2-CLK - SD Card Clock |
-| UART1-TX - UART Serial bus 1 transmit |
-| UART1-RX - UART Serial bus 1 receive |
+## SD/MMC
+Pin Number | Port Name | Pin Name | Signal Description | Type 
+-------------- | -------------- | -------------- | -------------- | --------------
+37-34 | PE4-PE7 | SDC2-D[3:0] | SDC2 Data Bit [3:0] | I/O
+33 | PE8 | SDC2-CMD | SDC2 Command Signal | I/O
+32 | PE9 | SDC2-CLK | SDC2 Clock | O
 
-| Bottom Side |
-| -------------- |
-| EINT19 - External Interrupt source 19 |
-| ... |
-| EINT24 - External Interrupt source 24 |
+## External Interrupt
+Pin Number | Port Name | Pin Name | Signal Description | Type 
+-------------- | -------------- | -------------- | -------------- | --------------
+44 | PG3 | EINT3 | External Interupt Input | I
+42 | PG4 | EINT4 | External Interupt Input | I
+10 | PG13 |EINT13 | External Interupt Input | I
+21 | PB5 | EINT19 | External Interupt Input | I
+25 | PB9 | EINT24 | External Interupt Input | I
+
+
+
+## USB
+Pin Number | Port Name | Pin Name | Signal Description | Type 
+-------------- | -------------- | -------------- | -------------- | --------------
+52 | UDM0 | USB0-DM | USB0 D- Signal | A I/O
+51 | UDP0 | USB0-DP | USB0 D+ Signal | A I/O
+48 | UDM1 | USB1-DM | USB1 D- Signal | A I/O
+47 | UDP1 | USB1-DP | USB1 D+ Signal | A I/O
+50 | VCC | VCC-USB | USB Power Supply | P
+
+## Audio Codec
+Pin/Signal Name | Description | Type 
+-------------- | -------------- | --------------
+26 | NA | GND | Audio Codec Analog Ground | G
+19 | NA | HPCOM | Headphone Common Reference Output | AO
+18 | NA | HPL | Headphone Left Channel Output | AO
+20 | NA | HPR | Headphone Right Channel Output | AO
+27 | NA | MICIN1 | Microphone Input | AI
+28 | NA | MICIN2 | Microphone INput | AI
+29 | NA | VMIC | Bias Voltage Out | AO
+
+## LRADC
+Pin/Signal Name | Description | Type 
+-------------- | -------------- | --------------
+42 | NA | LRADC0 | ADC Input Channel0 for Multi-Button Input | I
