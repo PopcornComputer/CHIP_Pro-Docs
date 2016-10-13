@@ -1,5 +1,17 @@
 # Pin Descriptions
 
+![C.H.I.P. Pro Pins](images/CHIP-Pro-Pinout.png)
+
+The C.H.I.P. Pro has a number of specialized pins for input and output, plus 27 general purpose input and output (GPIO) pins. The image above shows the pin location and muxing on C.H.I.P. Pro, and tables below organize pins according to their specialized functions.
+
+* Pin Number: 
+* Port: 
+* Pin Name: 
+* Signal Description
+* Type
+
+For more detailed information about pins on C.H.I.P. Pro and the GR8, please see the data sheets available [here](https://github.com/NextThingCo).
+
 ## TWI
 Pin Number | Port | Pin Name | Signal Description | Type 
 -------------- | -------------- | -------------- | -------------- | --------------
@@ -69,8 +81,6 @@ Pin Number | Port Name | Pin Name | Signal Description | Type
 21 | PB5 | EINT19 | External Interupt Input | I
 25 | PB9 | EINT24 | External Interupt Input | I
 
-
-
 ## USB
 Pin Number | Port Name | Pin Name | Signal Description | Type 
 -------------- | -------------- | -------------- | -------------- | --------------
@@ -81,8 +91,8 @@ Pin Number | Port Name | Pin Name | Signal Description | Type
 50 | VCC | VCC-USB | USB Power Supply | P
 
 ## Audio Codec
-Pin/Signal Name | Description | Type 
--------------- | -------------- | --------------
+Pin Number | Port | Pin Name | Signal Description | Type 
+-------------- | -------------- | -------------- | -------------- | --------------
 26 | NA | GND | Audio Codec Analog Ground | G
 19 | NA | HPCOM | Headphone Common Reference Output | AO
 18 | NA | HPL | Headphone Left Channel Output | AO
@@ -92,6 +102,6 @@ Pin/Signal Name | Description | Type
 29 | NA | VMIC | Bias Voltage Out | AO
 
 ## LRADC
-Pin/Signal Name | Description | Type 
--------------- | -------------- | --------------
+Pin Number | Port | Pin Name | Signal Description | Type 
+-------------- | -------------- | -------------- | -------------- | --------------
 42 | NA | LRADC0 | ADC Input Channel0 for Multi-Button Input | I

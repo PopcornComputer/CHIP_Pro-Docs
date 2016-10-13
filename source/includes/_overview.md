@@ -1,10 +1,8 @@
 # C.H.I.P. Pro Overview
 
-
 ![C.H.I.P. Pro](images/CHIP-Pro-Side-ISO.png)
 
 C.H.I.P. Pro is a system-on-module (SoM) that has 512MB of high-speed NAND storage flashed with our GadgetOS. It can be powered by USB or battery, intelligently managed by the AXP209 power management unit.
-
 
 C.H.I.P. Pro is powered by GR8, a system-in-package (SiP) that was designed by us. GR8 features a 1GHz Allwinner R8 ARM Cortex-A8 processor, Mali400 GPU, and 256MB of Nanya DDR3 DRAM. in a 14mm x 14mm FBGA package. 
 
@@ -22,14 +20,15 @@ We can't wait to see how you'll integrate C.H.I.P Pro in to your next product.
 
 ![C.H.I.P. Pro Block Diagram](images/CHIP-Pro-Block-Diagram.png)
 
-##SiP
+##GR8 SiP
 
-![GR8](images/GR8-Crop.png)
+![GR8](images/CHIP-Pro-Exploded-View.png)
 
+The GR8 is a System-in-Package that combines an Allwinner R8 with DDR3 memory on the same piece of silicon.
+ 
 * 1GHz Next Thing Co. GR8 ARM Cortex-A8 with ARMv7 instruction set and NEON coprocessor
 * Mali-400 GPU supporting OpenGL ES1.1/ 2.0 and OpenVG 1.1
 * 256MB DDR3 RAM
-
 
 ##Interfaces
 
@@ -61,7 +60,7 @@ We can't wait to see how you'll integrate C.H.I.P Pro in to your next product.
 ##Wireless Connectivity
 
 * Realtek 8723DS Combination Module
-* Bluetooth 4.0 LE
+* Bluetooth 4.2 LE
 * WiFi 802.11 b/g/n
 * uFL antenna connector
 * FCC/CE/IC certified
@@ -75,10 +74,10 @@ We can't wait to see how you'll integrate C.H.I.P Pro in to your next product.
 * 2.9V to 4.3V 
 * -25 to 85 degrees Celsius 
 
-
-##Package Specifications
+## Mechanical Drawing
 
 ![Mechanical Drawing](images/CHIP-Pro-PCB.png)
 
-* 45mm x 30mm board
-* 38.1mm x 24mm SMT or through-hole
+## PCB Footprint
+
+![C.H.I.P. Pro PCB Footprint](images/CHIP-Pro-Footprint.png)

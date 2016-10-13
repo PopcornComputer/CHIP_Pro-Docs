@@ -9,7 +9,6 @@ toc_footers:
 includes:
   - overview
   - pins
-  - pinusage
   - faq
 
 search: true
