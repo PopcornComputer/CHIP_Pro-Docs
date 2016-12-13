@@ -8,6 +8,7 @@ toc_footers:
 
 includes:
   - overview
+  - gettowork
   - pins
   - faq
 
