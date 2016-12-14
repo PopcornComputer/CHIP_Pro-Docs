@@ -1,110 +1,62 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/lord/img/master/logo-slate.png" alt="Slate: API Documentation Generator" width="226">
-  <br>
-  <a href="https://travis-ci.org/lord/slate"><img src="https://travis-ci.org/lord/slate.svg?branch=master" alt="Build Status"></a>
-</p>
+# Next Thing DIP Documentation
 
-<p align="center">Slate helps you create beautiful, intelligent, responsive API documentation.</p>
 
-<p align="center"><img src="https://dl.dropboxusercontent.com/u/95847291/github%20images/slate/slate_screenshot_new.png" width=700 alt="Screenshot of Example Documentation created with Slate"></p>
+All documentation is written in markdown and staged on github pages. Published documentation is viewable on the github pages.
 
-<p align="center"><em>The example above was created with Slate. Check it out at <a href="https://lord.github.io/slate">lord.github.io/slate</a>.</em></p>
+If you want to add or modify a document, add your markdown file to the [includes](https://github.com/NextThingCo/DIP-Docs/tree/master/source/includes) directory and make a pull request. You can use [Github markdown](https://help.github.com/articles/github-flavored-markdown/) or [regular markdown](https://daringfireball.net/projects/markdown/syntax). 
 
-Features
-------------
+Each include represents a top-level topic in the left-hand navigation if it is in the list of includes in `index.html`.
 
-* **Clean, intuitive design** — With Slate, the description of your API is on the left side of your documentation, and all the code examples are on the right side. Inspired by [Stripe's](https://stripe.com/docs/api) and [Paypal's](https://developer.paypal.com/webapps/developer/docs/api/) API docs. Slate is responsive, so it looks great on tablets, phones, and even in print.
+Note: If you view the files in the `include/` directory here on github, the image links appear broken. This is to be expected because these pages have yet to be rendered into a viewable state. 
 
-* **Everything on a single page** — Gone are the days when your users had to search through a million pages to find what they wanted. Slate puts the entire documentation on a single page. We haven't sacrificed linkability, though. As you scroll, your browser's hash will update to the nearest header, so linking to a particular point in the documentation is still natural and easy.
+## Uses the Slate Documentation Generator
 
-* **Slate is just Markdown** — When you write docs with Slate, you're just writing Markdown, which makes it simple to edit and understand. Everything is written in Markdown — even the code samples are just Markdown code blocks.
+This repo is [forked from Slate](https://github.com/tripit/slate). Read the docs on the original Slate repo [wiki](https://github.com/tripit/slate/wiki) if you want all the details. There are also some [sample docs](http://tripit.github.io/slate) worth perusing.
 
-* **Write code samples in multiple languages** — If your API has bindings in multiple programming languages, you can easily put in tabs to switch between them. In your document, you'll distinguish different languages by specifying the language name at the top of each code block, just like with Github Flavored Markdown.
-
-* **Out-of-the-box syntax highlighting** for [over 100 languages](https://github.com/jneen/rouge/wiki/List-of-supported-languages-and-lexers), no configuration required.
-
-* **Automatic, smoothly scrolling table of contents** on the far left of the page. As you scroll, it displays your current position in the document. It's fast, too. We're using Slate at TripIt to build documentation for our new API, where our table of contents has over 180 entries. We've made sure that the performance remains excellent, even for larger documents.
-
-* **Let your users update your documentation for you** — By default, your Slate-generated documentation is hosted in a public Github repository. Not only does this mean you get free hosting for your docs with Github Pages, but it also makes it simple for other developers to make pull requests to your docs if they find typos or other problems. Of course, if you don't want to use GitHub, you're also welcome to host your docs elsewhere.
-
-Getting started with Slate is super easy! Simply fork this repository and follow the instructions below. Or, if you'd like to check out what Slate is capable of, take a look at the [sample docs](http://lord.github.io/slate).
-
-Getting Started with Slate
-------------------------------
+Here's the crux of the matter, though:
 
 ### Prerequisites
 
 You're going to need:
 
  - **Linux or OS X** — Windows may work, but is unsupported.
- - **Ruby, version 2.2.5 or newer**
+ - **Ruby, version 1.9.3 or newer**
  - **Bundler** — If Ruby is already installed, but the `bundle` command doesn't work, just run `gem install bundler` in a terminal.
 
-### Getting Set Up
-
-1. Fork this repository on Github.
-2. Clone *your forked repository* (not our original one) to your hard drive with `git clone https://github.com/YOURUSERNAME/slate.git`
-3. `cd slate`
-4. Initialize and start Slate. You can either do this locally, or with Vagrant:
-
-```shell
-# either run this to run locally
+#### Ubuntu 14.04 LTS
+Install the following packages, then jump to the Preview section.
+```
+sudo apt-get install git ruby-dev
+sudo gem install bundler
+cd 
+git clone git@github.com:NextThingCo/DIP-Docs.git
+cd DIP-Docs
 bundle install
-bundle exec middleman server
-
-# OR run this to run with vagrant
-vagrant up
 ```
 
-You can now see the docs at http://localhost:4567. Whoa! That was fast!
 
-Now that Slate is all set up on your machine, you'll probably want to learn more about [editing Slate markdown](https://github.com/lord/slate/wiki/Markdown-Syntax), or [how to publish your docs](https://github.com/lord/slate/wiki/Deploying-Slate).
 
-If you'd prefer to use Docker, instructions are available [in the wiki](https://github.com/lord/slate/wiki/Docker).
+#### Getting El Capitan to Behave
+Installing on El Capitan (OS X 10.11) can be difficult. 
+Once you clone the directory, you may need to `cd` to the chipdocs directory, then run the command `bundle install`. 
+If you get errors when you try to run `./deploy.sh` after that, try `bundle update` to install the bundler, and then try `./deploy.sh` again. 
 
-Companies Using Slate
----------------------------------
+There may be some other black magic involved in getting it working on El Capitan, including:
+```
+brew install ruby
+sudo gem install therubyracer -v '0.12.2'
+sudo gem install libv8 -v '3.16.14.13' -- --with-system-v8
+```
+or perhaps even adding `-n /usr/local/bin` to the end of those last two items. I had to fumble around with a lot of various suggestions on the internets to finally get this working on El Capitan, so it is hard to say exactly which one fixed it. The last command I tried before it worked was `bundle update`, so I'd try that first!
 
-* [NASA](https://api.nasa.gov)
-* [IBM](https://docs.cloudant.com/api.html)
-* [Sony](http://developers.cimediacloud.com)
-* [Mozilla](http://mozilla.github.io/localForage/)
-* [Best Buy](https://bestbuyapis.github.io/api-documentation/)
-* [Travis-CI](https://docs.travis-ci.com/api/)
-* [Greenhouse](https://developers.greenhouse.io/harvest.html)
-* [Woocommerce](http://woothemes.github.io/woocommerce-rest-api-docs/)
-* [Appium](http://appium.io/slate/en/master)
-* [Dwolla](https://docs.dwolla.com/)
-* [Clearbit](https://clearbit.com/docs)
-* [Coinbase](https://developers.coinbase.com/api)
-* [Parrot Drones](http://developer.parrot.com/docs/bebop/)
-* [Fidor Bank](http://docs.fidor.de/)
+### Preview
+If you want to preview your changes to the documents in a browser before you make a pull request or push changes, navigate to the chipdocs/ directory, and use the middleman server to render and serve the documentation in HTML. The terminal will tell you the URL to use to check out the docs.
+```
+bundle install
+bundle exec middleman server
+```
 
-You can view more in [the list on the wiki](https://github.com/lord/slate/wiki/Slate-in-the-Wild).
+### Publish
 
-Need Help? Found a bug?
---------------------
+The normal Slate workflow requires that changes to the master branch be commited and pushed. Then, the `deploy.sh` script can be run locally to render HTML, push changes to the `gh-pages` branch, and made live. We've modified the workflow so an external script monitors this repo, renders any changes to the HTML, then merges with the other "-Docs" and "landingpage" repositories in this organization to create the "masterdocs" repository. Ultimately it all ends up at [docs.getchip.com](http://docs.getchip.com)
 
-[Submit an issue](https://github.com/lord/slate/issues) to the Slate Github if you need any help. And, of course, feel free to submit pull requests with bug fixes or changes.
-
-Contributors
---------------------
-
-Slate was built by [Robert Lord](https://lord.io) while interning at [TripIt](https://www.tripit.com/).
-
-Thanks to the following people who have submitted major pull requests:
-
-- [@chrissrogers](https://github.com/chrissrogers)
-- [@bootstraponline](https://github.com/bootstraponline)
-- [@realityking](https://github.com/realityking)
-- [@cvkef](https://github.com/cvkef)
-
-Also, thanks to [Sauce Labs](http://saucelabs.com) for helping sponsor the project.
-
-Special Thanks
---------------------
-- [Middleman](https://github.com/middleman/middleman)
-- [jquery.tocify.js](https://github.com/gfranko/jquery.tocify.js)
-- [middleman-syntax](https://github.com/middleman/middleman-syntax)
-- [middleman-gh-pages](https://github.com/edgecase/middleman-gh-pages)
-- [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
