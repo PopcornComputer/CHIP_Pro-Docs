@@ -187,3 +187,8 @@ It's always reassuring to check that you have a connection with ping:
 ping 8.8.8.8 #google dns server
 ```
 
+# Manufacturing with CHIP Pro
+If you want to manufacture a product with CHIP Pro here's some advice.
+	
+# Open Source
+The CHIP Pro is open source hardware. Get all the details in our [github repo](https://github.com/NextThingCo/CHIP_Pro-Hardware)

@@ -11,6 +11,8 @@ includes:
   - gettowork
   - pins
   - faq
+  - chipvchippro
+  - pinusage
 
 search: true
 ---

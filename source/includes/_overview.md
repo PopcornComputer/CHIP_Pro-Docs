@@ -36,7 +36,7 @@ CHIP Pro is built around the GR8 System-in-Package that combines an Allwinner R8
 * Mali-400 GPU supporting OpenGL ES1.1/ 2.0 and OpenVG 1.1
 * 256MB DDR3 RAM
 
-More information about the GR8 SiP can be found on the [GR8 documentation page.](http://docs.getchip.com/GR8.html)
+More information about the GR8 SiP can be found on the [GR8 documentation page](http://docs.getchip.com/GR8.html) and in the [GR8 data sheet](https://github.com/NextThingCo/CHIP_Pro-Hardware/raw/master/Datasheets/GR8_Datasheet_v1.0.pdf)
 
 # Specifications
 
@@ -97,4 +97,4 @@ The exterior dimensions of CHIP Pro are 32 mm x 47.60 mm (1.26 in x 1.87 in). Mo
 
 ## Data Sheet
 
-The data sheet for CHIP Pro is available [on our CHIP Pro Hardware github repo](http://www.github.com/TKTK)
+While this documentation contains much of the needed technical info for CHIP Pro, the complete data sheet for CHIP Pro is available [on our CHIP Pro Hardware github repo](https://github.com/NextThingCo/CHIP_Pro-Hardware/raw/master/Datasheets/CHIP_PRO_Datasheet_v1.0.pdf)
