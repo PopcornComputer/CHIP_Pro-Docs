@@ -11,6 +11,8 @@ bundle exec middleman server
 ```
 Go to your browser and visit [http://localhost:4567](http://localhost:4567) to view the docs.
 
+If this fails, read on!
+
 ## Intro
 
 All documentation is written in markdown and staged on github pages. Published documentation is viewable on the github pages.
