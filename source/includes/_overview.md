@@ -8,7 +8,9 @@ This document provides technical details on the module and basic guides for gett
 
 ## Overview
 
-C.H.I.P. Pro is powered by GR8, a system-in-package (SiP) that was designed by us. GR8 features a 1GHz Allwinner R8 ARM Cortex-A8 processor, Mali400 GPU, and 256MB of Nanya DDR3 DRAM. in a 14mm x 14mm FBGA package. CHIP Pro adds to the GR8 with 512MB of high-speed NAND storage, WiFi and Bluetooth connectivity, power and battery management, pins for popular I/O busses, USB gadget, the verstatility of mainline Linux, all on a compact footprint.
+CHIP Pro is a breadboard-friendly and surface-mount-ready computer designed from the ground up to power the next generation of smart devices.
+
+C.H.I.P. Pro is powered by GR8, a system-in-package (SiP) that was designed by us at Next Thing Co. GR8 features a 1GHz Allwinner R8 ARM Cortex-A8 processor, Mali400 GPU, and 256MB of Nanya DDR3 DRAM. in a 14mm x 14mm FBGA package. CHIP Pro adds to the GR8 with 512MB of high-speed NAND storage, WiFi and Bluetooth connectivity, power and battery management, pins for popular I/O busses, USB gadget, the verstatility of mainline Linux, all on a compact footprint.
 
 The module offers all the popular interfaces you'd expect. With two UARTs, a Two Wire Interface, a parallel camera interface, SPI, two PWM channels, a USB 2.0 OTG, and a USB 2.0 Host, C.H.I.P. Pro is packed full of opportunity. Comprehensive audio handling includes a built-in 24-bit ADC/DAC for stereo audio in and out, One Wire Audio digital out, and I2S digital audio for interfacing with professional audio DACs.
 
@@ -83,7 +85,6 @@ More information about the GR8 SiP can be found on the [GR8 documentation page](
 * Debian for CHIP Pro, for a familiar Linux experience
 * Next Thing Co rootfs on GitHub so developers can create their own Linux distro for CHIP Pro
 
-
 ## Mechanical Drawing
 
 You can download a high resolution version of this image [here](CHIP-Pro-PCB.png)
@@ -91,7 +92,7 @@ You can download a high resolution version of this image [here](CHIP-Pro-PCB.png
 
 ## PCB Footprint
 
-The exterior dimensions of CHIP Pro are 32 mm x 47.60 mm (1.26 in x 1.87 in). More detailed dimensions are in the following diagram.
+CHIP Pro is designed for scale and ready to drop into any SMT manufacturing line. The exterior dimensions of CHIP Pro are 32 mm x 47.60 mm (1.26 in x 1.87 in). More detailed dimensions are in the following diagram.
 
 ![C.H.I.P. Pro PCB Footprint](images/CHIP-Pro-Footprint.png)
 
