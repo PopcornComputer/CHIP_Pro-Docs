@@ -22,61 +22,11 @@ TKTK - images showing power connections?
 
 Like it's larger brother C.H.I.P., C.H.I.P. Pro's GR8 SiP can run mainline Linux. This provides security, flexibility, robust tools, and open-source options for getting your product working. In the interest of power consumption and storage space, we have several options to best fit your production.
 
-### Gadget OS - Easy to Run
+### Gadget OS
 
 ---GADGET--- TKTK
 
-###	Buildroot - Minimal and Fast
-
-Buildroot is a tool for building and cross-compiling a linux distribution that only has what you need. Setting up buildroot requires either a [virtual machine](http://docs.getchip.com/chip.html#installing-c-h-i-p-sdk) or a computer running Ubuntu OS, [setup for flashing](http://docs.getchip.com/chip.html#setup-ubuntu-for-flashing).
-
-#### Things you will need
-
- * C.H.I.P. Pro
- * Standard-USB to micro-USB connector
- * An appendage to hold down the FEL button
- * Separate computer with the C.H.I.P. SKD [virtual machine](http://docs.getchip.com/chip.html#installing-c-h-i-p-sdk) or Ubuntu OS, [setup for flashing](http://docs.getchip.com/chip.html#setup-ubuntu-for-flashing).
- * Separate computer with [Chrome](https://www.google.com/chrome/browser/desktop/index.html) or [Chromium](https://www.chromium.org/getting-involved/download-chromium) browser 
-
-#### Modify and Build
-
-[C.H.I.P.-buildroot](https://github.com/NextThingCo/C.H.I.P.-buildroot) is used to build buildroot and the linux kernel. Its Makefile operates on a `.config` file which specifies options to include in the build. The `.config` lives in the repository's root, whereas the one for the linux kernel is: ./board/chip/linux.config/
-
-First, clone the buildroot repot and create the default config file with:
-
-```
-git clone https://github.com/NextThingCo/C.H.I.P.-buildroot
-cd C.H.I.P.-buildroot
-make chippro_defconfig
-```
-
-This will copy the the `chippro_defconfig` file as `.config` in the root of the repository. Other default config targets for other hardware can be found in the `config` subdirectory. You can, of course, create your own config files and use them later.
-
-Customize the buildroot using 
-
-```
-make nconfig
-```
-
-For Linux (which will modify the linux.config under board/nextthing/chip/): 
-
-```
-make linux nconfig
-```
-
-Now
-
-```
-make
-```
-
-from the buildroot repository root. This will cross-compile linux/buildroot for C.H.I.P. Pro. The targets wind up in the ./output/images directory. If you make changes to your config files, you can just `make` again without a `make clean`. 
-
-#### Flash
-
-TKTK
-
-### Debian - Familiar and Strong
+### Debian
 If you need to, you can run a standard Debian distribution, complete with all the package managers and conveniences you know and love. While this is great for development, it may not be optimal to deliver your product with a full debian installation. 
 
 #### Things you will need
@@ -89,10 +39,6 @@ If you need to, you can run a standard Debian distribution, complete with all th
 #### Flash
 
 Visit our OS flash site at [flash.getchip.com](http://flash.getchip.com) in Chrome or Chromium browser. Hold down the FEL button on C.H.I.P. Pro and follow all the instructions in the browser. 
-
-### Use NTC rootfs to make your own distro
-
-For those who have their own Linux distribution or want to make their own, we provide our rootfs [on github](http://github.com/NextThingCo/TKTK). This provides the C.H.I.P. Pro-specific software that can be used to pair with a custom kernel and needed binaries. 
 
 ## Use It 
 
