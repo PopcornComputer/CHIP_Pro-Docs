@@ -92,7 +92,7 @@ You can download a high resolution version of this image [here](CHIP-Pro-PCB.png
 
 ## PCB Footprint
 
-CHIP Pro is designed for scale and ready to drop into any SMT manufacturing line. The exterior dimensions of CHIP Pro are 32 mm x 47.60 mm (1.26 in x 1.87 in). More detailed dimensions are in the following diagram.
+CHIP Pro is designed for scale and ready to drop into any SMT manufacturing line. The exterior dimensions for the PCB pads for CHIP Pro are 32 mm x 47.60 mm (1.26 in x 1.87 in). More detailed dimensions for your board layout are in the following diagram.
 
 ![C.H.I.P. Pro PCB Footprint](images/CHIP-Pro-Footprint.png)
 
