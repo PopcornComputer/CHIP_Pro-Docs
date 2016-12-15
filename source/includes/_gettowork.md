@@ -20,7 +20,7 @@ TKTK - images showing power connections?
 
 ## Get an Operating System
 
-Like it's larger brother C.H.I.P., C.H.I.P. Pro's GR8 SiP can run mainline Linux. This provides security, flexibility, robust tools, and open-source options for getting your product working. However, in the interest of power consumption and storage space, we have several options to best fit your production.
+Like it's larger brother C.H.I.P., C.H.I.P. Pro's GR8 SiP can run mainline Linux. This provides security, flexibility, robust tools, and open-source options for getting your product working. In the interest of power consumption and storage space, we have several options to best fit your production.
 
 ### Gadget OS - Easy to Run
 

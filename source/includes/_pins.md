@@ -32,8 +32,8 @@ Pin Number | Port | Pin Name | Signal Description | Type
 ## UART – Universal Asynchronous Receiver/Transmitter
 Pin Number | Port | Pin Name | Signal Description | Type 
 -------------- | -------------- | -------------- | -------------- | --------------
-44 | PG3 | UART1-TX | UART0 Data Transmit | O
-43 | PG4 | UART1-RX | UART0 Data Receive | I
+44 | PG3 | UART1-TX | UART1 Data Transmit | O
+43 | PG4 | UART1-RX | UART1 Data Receive | I
 13 | PD2 | UART2-TX | UART2 Data Transmit | I
 14 | PD3 | UART2-RX | UART2 Data Receive | O
 15 | PD4 | UART2-CTS | UART2 Data Clear to Send | I
