@@ -6,31 +6,31 @@ The C.H.I.P. Pro has a number of specialized pins for input and output, plus 27 
 
 * Pin Number: 
 * Port: 
-* Pin Name: 
+* GR8 Pin Name: 
 * Signal Description
 * Type
 
 For more detailed information about pins on C.H.I.P. Pro and the GR8, please see the data sheets available [here](https://github.com/NextThingCo).
 
-## TEMPSENSE
-Pin Number | Port | Pin Name | Signal Description | Type 
+## BATTEMP
+Pin Number | Port | GR8 Pin Name | Signal Description | Type 
 -------------- | -------------- | -------------- | -------------- | --------------
-7 | NA | TEMPSENSE | Thermistor connection for battery heat detection | I
+7 | NA | BATTEMP | Thermistor connection for battery heat detection | I
 
 ## PWM
-Pin Number | Port | Pin Name | Signal Description | Type 
+Pin Number | Port | GR8 Pin Name | Signal Description | Type 
 -------------- | -------------- | -------------- | -------------- | --------------
 9 | PB2 | PWM0 | Pulse Width Module Channel0 Output | O
 10 | PG13 | PWM1 | Pulse Width Module Channel1 Output | O
 
 ## TWI1
-Pin Number | Port | Pin Name | Signal Description | Type 
+Pin Number | Port | GR8 Pin Name | Signal Description | Type 
 -------------- | -------------- | -------------- | -------------- | --------------
 11 | PB16 | TWI1-SCK | TWI0 Clock | I/O
 12 | PB15 | TWI1-SDA | TWI0 Data/Address | I/O
 
 ## UART – Universal Asynchronous Receiver/Transmitter
-Pin Number | Port | Pin Name | Signal Description | Type 
+Pin Number | Port | GR8 Pin Name | Signal Description | Type 
 -------------- | -------------- | -------------- | -------------- | --------------
 44 | PG3 | UART1-TX | UART1 Data Transmit | O
 43 | PG4 | UART1-RX | UART1 Data Receive | I
@@ -40,9 +40,9 @@ Pin Number | Port | Pin Name | Signal Description | Type
 16 | PD5 | UART2-RTS | UART2 Data Request to Send | I
 
 ## Audio Codec
-Pin Number | Port | Pin Name | Signal Description | Type 
+Pin Number | Port | GR8 Pin Name | Signal Description | Type 
 -------------- | -------------- | -------------- | -------------- | --------------
-26 | NA | GND | Audio Codec Analog Ground | G
+26 | NA | AGND | Audio Codec Analog Ground | G
 19 | NA | HPCOM | Headphone Common Reference Output | AO
 18 | NA | HPL | Headphone Left Channel Output | AO
 20 | NA | HPR | Headphone Right Channel Output | AO
@@ -51,7 +51,7 @@ Pin Number | Port | Pin Name | Signal Description | Type
 29 | NA | VMIC | Bias Voltage Out | AO
 
 ## I2S
-Pin Number | Port | Pin Name | Signal Description | Type 
+Pin Number | Port | GR8 Pin Name | Signal Description | Type 
 -------------- | -------------- | -------------- | -------------- | --------------
 21 | PB5 | I2S-MCLK | I2S Master Clock | O
 22 | PB6 | I2S-BCLK | I2S Bit Clock | I/O
@@ -60,17 +60,17 @@ Pin Number | Port | Pin Name | Signal Description | Type
 25 | PB9 | I2S-DI | I2S Data Input | I
 
 ## OWA – One Wire Audio 
-Pin Number | Port | Pin Name | Signal Description | Type 
+Pin Number | Port | GR8 Pin Name | Signal Description | Type 
 -------------- | -------------- | -------------- | -------------- | --------------
 9 | PB2 | OWA-DO | OWA Data Output | O
 
 ## LRADC
-Pin Number | Port | Pin Name | Signal Description | Type 
+Pin Number | Port | GR8 Pin Name | Signal Description | Type 
 -------------- | -------------- | -------------- | -------------- | --------------
 42 | NA | LRADC0 | ADC Input Channel0 for Multi-Button Input | I
 
 ## SPI – Serial Peripheral Interface 
-Pin Number | Port | Pin Name | Signal Description | Type 
+Pin Number | Port | GR8 Pin Name | Signal Description | Type 
 -------------- | -------------- | -------------- | -------------- | --------------
 41 | PE0 | SPI2-CS0 | SPI2 Chip Slect Signal (active low) | I/O
 40 | PE1 | SPI2-CLK | SPI2 Clock Signal | I/O
@@ -78,12 +78,12 @@ Pin Number | Port | Pin Name | Signal Description | Type
 38 | PE3 | SPI2-MOSI | SPI2 Master Data Out, Slave Data In | I/O
 
 ## D0-D7 – General Purpose In/Out
-Pin Number | Port Name | Pin Name | Signal Description | Type 
+Pin Number | Port Name | GR8 Pin Name | Signal Description | Type 
 -------------- | -------------- | -------------- | -------------- | --------------
 37-30 | D0-D7 | GPIO | Digital I/O | I/O
 
 ## CSI – Camera Sensor Interface
-Pin Number | Port Name | Pin Name | Signal Description | Type 
+Pin Number | Port Name | GR8 Pin Name | Signal Description | Type 
 -------------- | -------------- | -------------- | -------------- | --------------
 41 | PE0 | CSI-PCLK | CSI Pixel Clock | I
 40 | PE1 | CSI-MCLK | CSI Master Clock | O
@@ -92,14 +92,14 @@ Pin Number | Port Name | Pin Name | Signal Description | Type
 37-30 | PE4-PE11 | CSI-Data[7:0] | CSI Data Bit | I
 
 ## SD/MMC
-Pin Number | Port Name | Pin Name | Signal Description | Type 
+Pin Number | Port Name | GR8 Pin Name | Signal Description | Type 
 -------------- | -------------- | -------------- | -------------- | --------------
 37-34 | PE4-PE7 | SDC2-D[3:0] | SDC2 Data Bit [3:0] | I/O
 33 | PE8 | SDC2-CMD | SDC2 Command Signal | I/O
 32 | PE9 | SDC2-CLK | SDC2 Clock | O
 
 ## External Interrupt
-Pin Number | Port Name | Pin Name | Signal Description | Type 
+Pin Number | Port Name | GR8 Pin Name | Signal Description | Type 
 -------------- | -------------- | -------------- | -------------- | --------------
 44 | PG3 | EINT3 | External Interupt Input | I
 42 | PG4 | EINT4 | External Interupt Input | I
@@ -108,12 +108,12 @@ Pin Number | Port Name | Pin Name | Signal Description | Type
 25 | PB9 | EINT24 | External Interupt Input | I
 
 ## USB1 and USB0
-Pin Number | Port Name | Pin Name | Signal Description | Type 
+Pin Number | Port Name | GR8 Pin Name | Signal Description | Type 
 -------------- | -------------- | -------------- | -------------- | --------------
 52 | UDM0 | USB0-DM | USB0 D- Signal | A I/O
 51 | UDP0 | USB0-DP | USB0 D+ Signal | A I/O
 48 | UDM1 | USB1-DM | USB1 D- Signal | A I/O
 47 | UDP1 | USB1-DP | USB1 D+ Signal | A I/O
-50 | VCC | VCC-USB | USB Power Supply | P
+50 | VUSB | VCC-USB | VBUS Power Supply | P
 
 Note: The on-board micro USB connector is wired in series with the castellated edge points at VBUS, UDP0, UDM0, and GND. If you connect a USB host to both the castellated edges AND the connector, at best your USB will no longer work, at worst you may damage your equipment. 
