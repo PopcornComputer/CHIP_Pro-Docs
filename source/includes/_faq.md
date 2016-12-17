@@ -18,7 +18,7 @@
 C.H.I.P. Pro costs $16.
 
 ## Are there quantity discounts?
-C.H.I.P. Pro is $16 no matter how many you order. But, if you have to ask, you should contact sales@nextthing.co. 
+C.H.I.P. Pro is $16 no matter how many you order. But, if you have to ask, you should contact [sales@nextthing.co](mailto:sales@nextthing.co). 
 
 ## Is the C.H.I.P. Pro open source?
 Yes, you can see our design files in our [git repository](https://github.com/NextThingCo/CHIP_Pro-Hardware).
@@ -30,7 +30,7 @@ C.H.I.P. is still a huge part of what we do. We made C.H.I.P. Pro and Gadget so 
 Currently we’re offering the C.H.I.P. Pro Dev kit for $49 in our web store with an estimated shipping by the end of this year. C.H.I.P. Pro will be available in Q1 of 2017.
 
 ##  How many may I order?
-As many or as few as you’d like. 1 to 1 million (or more). For larger orders, hit us up at sales@nextthing.co
+As many or as few as you’d like. 1 to 1 million (or more). For larger orders, hit us up at [sales@nextthing.co](mailto:sales@nextthing.co)
 
 ## When will C.H.I.P. Pro ship?
 C.H.I.P. Pro Dev kits is shipping in late Q4 of 2016 and C.H.I.P. Pro will be available in any quantity starting Q1 of 2017.
@@ -60,4 +60,4 @@ For C.H.I.P. Pro yes! For GR8, no, but it still works with Gadget to build, depl
 Oh wow. We cannot wait to tell you. Stay tuned. Stay very, very tuned.
 
 ## I’m a distributor, can I carry GR8?
-Sure! We want to talk to you. Contact us at sales@nextthing.co.
+Sure! We want to talk to you. Contact us at [sales@nextthing.co](mailto:sales@nextthing.co).
