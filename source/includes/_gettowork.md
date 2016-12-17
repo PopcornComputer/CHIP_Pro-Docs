@@ -4,15 +4,15 @@
 
 C.H.I.P. Pro can be powered in a few ways, all managed by the AXP209 power management circuit. For simple applications on the test desk, power can be provided over the micro USB connector from a USB power supply or powered USB hub. But C.H.I.P. is for building, and depending on the nature of your product, there are different power options to make it easier to make with C.H.I.P. Pro.
 
-* CHGIN - connect 4.8 to 6 volts of power to this pin (and GND) to provide power for C.H.I.P. Pro. If you have a Lithium Polymer (LiPo) battery connected to BAT, then power provided to CHGIN will also charge the battery. 
-* BAT - connect a 3.7 volts Lithium Polymer (LiPo) battery to this pin (and GND) to provide power to C.H.I.P. Pro and receive charge from power inputs.
-* VBUS - connect 5 volts to this pin (and GND to pin 53) to provide power to C.H.I.P.. Power connected to VBUS will also charge a battery, just at a slower rate than from CHGIN
+* **CHGIN** - connect 4.8 to 6 volts of power to this pin (and GND) to provide power for C.H.I.P. Pro. If you have a Lithium Polymer (LiPo) battery connected to BAT, then power provided to CHGIN will also charge the battery. 
+* **BAT** - connect a 3.7 volts Lithium Polymer (LiPo) battery to this pin (and GND) to provide power to C.H.I.P. Pro and receive charge from power inputs.
+* **VBUS** - connect 5 volts to this pin (and GND to pin 53) to provide power to C.H.I.P.. Power connected to VBUS will also charge a battery, just at a slower rate than from CHGIN
 
 C.H.I.P. Pro has a couple options for providing power to peripherals and sensors.
 
-* VCC-3V3 - provides 3.3 V for sensors.
-* IPSOUT - the Intelligent Power Select provides up to 2.5 amps at up to 5 volts, depending on power provided at CHGIN or VBUS. If a 3.7V LiPo battery is the only source of power, IPSOUT will provide a bit less than 3.7 volts. In general, the voltage at IPSOUT is a bit less than voltage in, with a max voltage of 5 volts.
-* PWRON - connect to ground to turn C.H.I.P. Pro on and boot the operating system.
+* **VCC-3V3** - provides 3.3 V for sensors.
+* **IPSOUT** - the Intelligent Power Select provides up to 2.5 amps at up to 5 volts, depending on power provided at CHGIN or VBUS. If a 3.7V LiPo battery is the only source of power, IPSOUT will provide a bit less than 3.7 volts. In general, the voltage at IPSOUT is a bit less than voltage in, with a max voltage of 5 volts.
+* **PWRON** - connect to ground to turn C.H.I.P. Pro on and boot the operating system.
 
 If you need to provide power to a USB device connected to USB1, connect IPSOUT to an appropriate switching regulator to the USB connector pad on your circuit board.
 
@@ -38,7 +38,7 @@ If you need to, you can run a standard Debian distribution, complete with all th
 
 #### Flash
 
-Visit our OS flash site at [flash.getchip.com](http://flash.getchip.com) in Chrome or Chromium browser. Hold down the FEL button on C.H.I.P. Pro and follow all the instructions in the browser. 
+Visit our OS flash site at [flash.getchip.com](http://flash.getchip.com) in Chrome or Chromium browser. Hold down the FEL button on C.H.I.P. Pro and follow all the instructions in the browser. If you haven't already, you'll be asked to install the CHIP Flasher Plug-in for Chrome.
 
 ## Use It 
 
@@ -137,8 +137,5 @@ It's always reassuring to check that you have a connection with ping:
 ping 8.8.8.8 #google dns server
 ```
 
-# Manufacturing with C.H.I.P. Pro
-If you want to manufacture a product with C.H.I.P. Pro here's some advice.
-	
 # Open Source
 The C.H.I.P. Pro is open source hardware. Get all the details in our [github repo](https://github.com/NextThingCo/C.H.I.P._Pro-Hardware)
