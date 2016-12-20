@@ -50,7 +50,9 @@ You can download a high resolution version of this image [here](CHIP-Pro-PCB.png
 
 ### Dimensions
 
-Refer to the following diagram for the complete dimensions of C.H.I.P. Pro
+Refer to the following diagram for the complete dimensions of C.H.I.P. Pro:
+
+![C.H.I.P. Pro Dimensions](images/CHIPPro-dims.jpg)
 
 ## PCB Footprint
 
