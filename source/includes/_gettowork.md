@@ -8,7 +8,7 @@ C.H.I.P. Pro can be powered in a few ways, all managed by the AXP209 power manag
 * **BAT** - connect a 3.7 volts Lithium Polymer (LiPo) battery to this pin (and GND) to provide power to C.H.I.P. Pro and receive charge from power inputs.
 * **VBUS** - connect 5 volts to this pin (and GND to pin 53) to provide power to C.H.I.P.. Power connected to VBUS will also charge a battery, just at a slower rate than from CHGIN
 
-C.H.I.P. Pro has a couple options for providing power to peripherals and sensors.
+C.H.I.P. Pro has a three options for providing power to peripherals and sensors.
 
 * **VCC-3V3** - provides 3.3 V for sensors.
 * **IPSOUT** - the Intelligent Power Select provides up to 2.5 amps at up to 5 volts, depending on power provided at CHGIN or VBUS. If a 3.7V LiPo battery is the only source of power, IPSOUT will provide a bit less than 3.7 volts. In general, the voltage at IPSOUT is a bit less than voltage in, with a max voltage of 5 volts.
@@ -136,6 +136,15 @@ It's always reassuring to check that you have a connection with ping:
 ```
 ping 8.8.8.8 #google dns server
 ```
+
+
+### Compute I/O offset
+
+TKTK
+
+### Access I/O via sysfs	
+
+TKTK
 
 # Open Source
 The C.H.I.P. Pro is open source hardware. Get all the details in our [github repo](https://github.com/NextThingCo/C.H.I.P._Pro-Hardware)
