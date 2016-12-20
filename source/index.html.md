@@ -8,9 +8,10 @@ toc_footers:
 
 includes:
   - overview
+  - specifications
   - gettowork
   - pins
-  - faq
+  - CPfaq
   - chipvchippro
   - pinusage
 
