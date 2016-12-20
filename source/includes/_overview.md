@@ -18,7 +18,7 @@ C.H.I.P Pro is CE, IC, and FCC part 15 modularly certified, making integration i
 
 Charge or power from a battery, use an external power supply, or power it from USB. On-board Power management with the AXP209 provides plenty of power options to better match your applications: mobile, industrial, and low-power are all possible with C.H.I.P. Pro. 
 
-![C.H.I.P. Pro](images/CHIP-Pro-Side-Crop.png)
+![C.H.I.P. Pro](images/CHIP-Pro-Side-Crop.jpg)
 
 C.H.I.P. Pro is rated to operate between 2.9V-6V in temperatures ranging between 0 and 70 degrees Celsius and measures 45mm x 30mm.
 
@@ -39,67 +39,3 @@ C.H.I.P. Pro is built around the GR8 System-in-Package that combines an Allwinne
 * 256MB DDR3 RAM
 
 More information about the GR8 SiP can be found on the [GR8 documentation page](http://docs.getchip.com/GR8.html) and in the [GR8 data sheet](https://github.com/NextThingCo/CHIP_Pro-Hardware/raw/master/Datasheets/GR8_Datasheet_v1.0.pdf)
-
-# Specifications
-
-## C.H.I.P. Pro Exposed Interfaces
-
-* 1x Two Wire Interface
-* 2x UART (1x 2-wire and 1x 4-wire)
-* SPI enabling SD card interface 
-* 2x PWM
-* 6-bit ADC
-* I2S Digital Audio
-* S/PDIF IEC-60958 Digital Audio Input and Output 
-* 2x USB HS/FS/LS
-	* USB 2.0 Host
-	* USB 2.0 OTG
-* Parallel Camera Interface 
-* 3.3V DC supply
-* 27 GPIO
-
-## Audio
-
-* Stereo analog input 44.1K or 48K sampling rate
-* Stereo analog output 44.1K or 48K sampling rate
-* Programmable phantom power for mic in
-* Bi-directional I2S bus for external DAC codecs
-
-## Power and Battery Management
-
-* AXP209 power management unit, connected to a dedicated I2C bus
-* 2.9V to 6V
-* 0 to 70 degrees Celsius 
-
-## Wireless Connectivity
-
-* Realtek 8723DS Combination Module
-* Bluetooth 4.2 LE
-* WiFi 802.11 b/g/n
-* uFL antenna connector
-* FCC/CE/IC certified
-
-## Operating System
-
-* GadgetOS, a Linux optimized for GR8 and C.H.I.P. Pro
-* Debian for C.H.I.P. Pro, for a familiar Linux experience
-* Next Thing Co rootfs on GitHub so developers can create their own Linux distro for C.H.I.P. Pro
-
-## Mechanical Drawing
-
-You can download a high resolution version of this image [here](CHIP-Pro-PCB.png)
-![Mechanical Drawing](images/CHIP-Pro-PCB_sm.png)
-
-### Dimensions
-
-Refer to the following diagram for the complete dimensions of C.H.I.P. Pro
-
-## PCB Footprint
-
-C.H.I.P. Pro is designed for scale and ready to drop into any SMT manufacturing line. The exterior dimensions for the PCB pads for C.H.I.P. Pro are 32 mm x 47.60 mm (1.26 in x 1.87 in). More detailed dimensions for your board layout are in the following diagram.
-
-![C.H.I.P. Pro PCB Footprint](images/CHIP-Pro-Footprint.png)
-
-## Data Sheet
-
-While this documentation contains much of the needed technical info for C.H.I.P. Pro, the complete data sheet for C.H.I.P. Pro is available [on our C.H.I.P. Pro Hardware github repo](https://github.com/NextThingCo/CHIP_Pro-Hardware/raw/master/Datasheets/CHIP_PRO_Datasheet_v1.0.pdf)

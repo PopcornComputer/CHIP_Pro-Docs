@@ -40,17 +40,17 @@ If you need to, you can run a standard Debian distribution, complete with all th
 
 Visit our OS flash site at [flash.getchip.com](http://flash.getchip.com) in Chrome or Chromium browser. Hold down the FEL button on C.H.I.P. Pro and follow all the instructions in the browser. If you haven't already, you'll be asked to install the CHIP Flasher Plug-in for Chrome.
 
-## Use It 
+### Use It 
 
 Now that you have power and an operating system, you can connect to your C.H.I.P. Pro to test software and hardware, customize it, or load new software. There are two very important connections for this: serial and network. 
 
-### Serial Connection
+## Serial Connection
 
 The most basic connection to C.H.I.P. Pro is a serial connection, controlled through a host computer's terminal program.
 
-#### UART
+### UART
 
-##### Things you will need
+#### Things you will need
 
 * USB-UART cable ([for example](https://www.amazon.com/Armorview-PL2303HX-RS232-Module-Converter/dp/B008AGDTA4))
 * Drivers
@@ -77,9 +77,9 @@ Another popular program besides screen is `cu`.
 
 For Windows read [our guide](http://docs.getchip.com/chip.html#using-putty) on connecting with Putty or cygwin.
 
-#### USB Gadget Serial
+### USB Gadget Serial
 
-##### Things you will need
+#### Things you will need
 
 * USB micro-USB A cable ([for example](http://www.cablewholesale.com/products/usb-firewire/usb-2.0-cables/product-10u2-03101bk.php))
 * Computer with monitor (for example, a [C.H.I.P.](http://www.getchip.com/)!)
@@ -96,14 +96,14 @@ Note that for OS X, you either need to list out all the tty devices with `ls /de
 
 For Windows read [our guide](http://docs.getchip.com/chip.html#using-putty) on connecting with Putty or cygwin.
 
-### Log In
+## Log In
 Once you have connected via serial, you'll be prompted for a username and password. The defaults are `chip` and `chip`. Change your password with `pwd`.
 
-### Network
+## Network
 
 Once you have connected to C.H.I.P. Pro with a serial connection, you can set it up for network access. How this happens depends on the OS you have loaded onto C.H.I.P. Pro. Most likely you'll be able to make basic connections to a WiFi network using either `connman` or `nmcli` in the command line.
 
-#### Connman
+### Connman
 
 The basic commands to connect are done in a connman terminal. You can learn more about connman [here](https://wiki.archlinux.org/index.php/Connman)
 
@@ -120,7 +120,7 @@ sudo connmanctl # enter the connman terminal
 
 If your network doesn't have a password
 
-#### nmcli
+### nmcli
 
 You may find `nmcli` is the gateway to your network. There's a lot of information about nmcli on the [archlinux site](https://wiki.archlinux.org/index.php/NetworkManager). If nmcli is what you need, here's the commands you can use to connect to a network using your serial connection in the terminal:
 
@@ -129,7 +129,7 @@ sudo nmcli d wifi # list visible wifi networks
 sudo nmcli d wifi connect "Network SSID Name" password "Your Password" ifname wlan0 # if network is hidden add this to end: hidden yes
 ```
 
-#### ping!
+### ping!
 
 It's always reassuring to check that you have a connection with ping:
 
@@ -137,9 +137,9 @@ It's always reassuring to check that you have a connection with ping:
 ping 8.8.8.8 #google dns server
 ```
 
-### Access I/O via sysfs	
+## Access I/O via sysfs	
 
-#### GPIO Input
+### GPIO Input
 
 These lines of code will let us read values on pin CSIDO, which corresponds to pin 132 in the linux sysfs (CSID0-CSID7 have numbers 132-139) First, we tell the system we want to listen to this pin:
 
@@ -159,7 +159,7 @@ Connect a jumper wire or switch between Pin CSID0 and GND. Now use this line of 
   cat /sys/class/gpio/gpio132/value
 ```
 
-#### GPIO Output
+### GPIO Output
 
 You could also change the mode of a pin from “in” to “out”
 
@@ -176,7 +176,7 @@ Now that it's in output mode, you can write a value to the pin:
 If you attach an LED to the pin and ground, the LED will illuminate according to your control messages.
 
 
-#### GPIO Done
+### GPIO Done
 
 When you are done experimenting, you can tell the system to stop listening to the gpio pin:
 
@@ -184,7 +184,7 @@ When you are done experimenting, you can tell the system to stop listening to th
   sudo sh -c 'echo 132 > /sys/class/gpio/unexport'
 ```
 
-#### Finding GPIO Pin Names
+### Finding GPIO Pin Names
 You can calculate the sysfs pin number using the [Allwinner R8 Datasheet](https://github.com/NextThingCo/CHIP-Hardware/blob/master/CHIP%5Bv1_0%5D/CHIPv1_0-BOM-Datasheets/Allwinner%20R8%20Datasheet%20V1.2.pdf), starting on page 18. 
 
 The letter index is a multiple of 32 (where A=0), and the number is an offset. For example PE4 is `CSID_D0` so
