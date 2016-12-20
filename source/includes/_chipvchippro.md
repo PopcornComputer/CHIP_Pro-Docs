@@ -1,8 +1,8 @@
-# CHIP v CHIP Pro
+# C.H.I.P v C.H.I.P Pro
 
-CHIP and CHIP Pro have a lot of similarities, but there are some very important distinctions that go beyond the obvious size differences. 
+C.H.I.P and C.H.I.P Pro have a lot of similarities, but there are some very important distinctions that go beyond the obvious size differences. 
 
-feature | CHIP | CHIP Pro
+feature | C.H.I.P | C.H.I.P Pro
 --- | --- | ---
 RAM | 512 MB | 256 MB
 Storage | 4GB NAND SLC or 8GB NAND MLC | 512 MB SLC NAND
@@ -22,4 +22,4 @@ Bluetooth | 4.0 | 4.2
 PWM | 1 | 2
 Audio Input | 1 channel | 2 channel
 
-If you are looking for a more CHIP-like experience with connectors and LEDS, we recommend the Development Kit. 
+If you are looking for a more C.H.I.P-like experience with connectors and LEDS, we recommend the [Development Kit](http://www.getchip.com/pages/chippro.html). 
