@@ -24,10 +24,10 @@ Like it's larger brother C.H.I.P., C.H.I.P. Pro's GR8 SiP can run mainline Linux
 
 ### Gadget OS
 
----GADGET--- TKTK
+There are several examples of the Gadget OS for the Developer's Kit. These examples are designed around the hardware on the Developer's Kit board. If you dev kit's circuits for LED's and audio input, you can use them on a bare C.H.I.P. Pro. Read more in the [developer's kit documentation](pro.html#flash-an-example)
 
 ### Debian
-If you need to, you can run a standard Debian distribution, complete with all the package managers and conveniences you know and love. While this is great for development, it may not be optimal to deliver your product with a full debian installation. 
+We provide a standard Debian distribution, complete with all the package managers and conveniences you know and love. This package is ideal for development, since it is more flexible than the buildroot-based Gadget OS. However, you will want to keep track of your dependencies to more easily transition to the more nimble Gadget OS.
 
 #### Things you will need
 
