@@ -74,7 +74,7 @@ screen /dev/tty.USB0 115200      #Ubuntu
 
 Another popular program besides screen is `cu`. 
 
-For Windows read [our guide](http://docs.getchip.com/chip.html#using-putty) on connecting with Putty or ygwin.
+For Windows read [our guide](http://docs.getchip.com/chip.html#using-putty) on connecting with PuTTY or Cygwin.
 
 ### USB Gadget Serial
 
@@ -91,12 +91,12 @@ screen /dev/tty.usbmodem1440 115200 #OS X
 screen /dev/tty.ACM0 115200         #Ubuntu
 ```
 
-Note that for OS X, you either need to list out all the tty devices with `ls /dev/tty.usbm*` to find the actual ID, or use the tab key to autocomplete, like `screen /dev/tty.usbm <tab>`.
+Note that for OS X you either need to list out all the tty devices with `ls /dev/tty.usbm*` to find the actual ID or use the tab key to autocomplete, like `screen /dev/tty.usbm <tab>`.
 
-For Windows read [our guide](http://docs.getchip.com/chip.html#using-putty) on connecting with Putty or cygwin.
+For Windows read [our guide](http://docs.getchip.com/chip.html#using-putty) on connecting with PuTTY or Cygwin.
 
 ## Log In
-Once you have connected via serial, you'll be prompted for a username and password. The defaults are `chip` and `chip`. Change your password with `pwd`.
+Once you have connected via serial you'll be prompted for a username and password. The defaults are `chip` and `chip`. Change your password with `pwd`.
 
 ## Network
 
