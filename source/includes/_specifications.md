@@ -41,7 +41,7 @@
 
 * GadgetOS, a Linux optimized for GR8 and C.H.I.P. Pro
 * Debian for C.H.I.P. Pro, for a familiar Linux experience
-* Next Thing Co rootfs on GitHub so developers can create their own Linux distro for C.H.I.P. Pro
+* Next Thing Co. rootfs on GitHub so developers can create their own Linux distro for C.H.I.P. Pro
 
 ## Mechanical Drawing
 
@@ -56,7 +56,7 @@ Refer to the following diagram for the complete dimensions of C.H.I.P. Pro:
 
 ## PCB Footprint
 
-C.H.I.P. Pro is designed for scale and ready to drop into any SMT manufacturing line. The exterior dimensions for the PCB pads for C.H.I.P. Pro are 32 mm x 47.60 mm (1.26 in x 1.87 in). More detailed dimensions for your board layout are in the following diagram.
+C.H.I.P. Pro is designed for scale so it's ready to drop into any SMT manufacturing line. The exterior dimensions for the PCB pads for C.H.I.P. Pro are 32 mm x 47.60 mm (1.26 in x 1.87 in). More detailed dimensions for your board layout are in the following diagram:
 
 ![C.H.I.P. Pro PCB Footprint](images/CHIP-Pro-Footprint.png)
 
