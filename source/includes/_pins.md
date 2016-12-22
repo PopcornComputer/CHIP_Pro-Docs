@@ -4,9 +4,9 @@
 
 The C.H.I.P. Pro has a number of specialized pins for input and output, plus 27 general purpose input and output (GPIO) pins. The image above shows the pin location and muxing on C.H.I.P. Pro, and tables below organize pins according to their specialized functions.
 
-* Pin Number: 
-* Port: 
-* GR8 Pin Name: 
+* Pin Number
+* Port 
+* GR8 Pin Name 
 * Signal Description
 * Type
 
@@ -47,7 +47,7 @@ Pin Number | Port | GR8 Pin Name | Signal Description | Type
 18 | NA | HPL | Headphone Left Channel Output | AO
 20 | NA | HPR | Headphone Right Channel Output | AO
 27 | NA | MICIN1 | Microphone Input | AI
-28 | NA | MICIN2 | Microphone INput | AI
+28 | NA | MICIN2 | Microphone Input | AI
 29 | NA | VMIC | Bias Voltage Out | AO
 
 ## I2S
@@ -116,4 +116,4 @@ Pin Number | Port Name | GR8 Pin Name | Signal Description | Type
 47 | UDP1 | USB1-DP | USB1 D+ Signal | A I/O
 50 | VUSB | VCC-USB | VBUS Power Supply | P
 
-Note: The on-board micro USB connector is wired in series with the castellated edge points at VBUS, UDP0, UDM0, and GND. If you connect a USB host to both the castellated edges AND the connector, at best your USB will no longer work, at worst you may damage your equipment. 
+Note: The on-board micro-USB connector is wired in series with the castellated edge points at VBUS, UDP0, UDM0, and GND. If you connect a USB host to both the castellated edges AND the connector, at best your USB will no longer work, at worst you may damage your equipment. 
