@@ -18,7 +18,7 @@
 C.H.I.P. Pro costs $16.
 
 ## Are there quantity discounts?
-C.H.I.P. Pro is $16 no matter how many you order. But, if you have to ask, you should contact [sales@nextthing.co](mailto:sales@nextthing.co). 
+C.H.I.P. Pro is $16 no matter how many you order. But, if you have to ask you should contact [sales@nextthing.co](mailto:sales@nextthing.co). 
 
 ## Is the C.H.I.P. Pro open source?
 Yes, you can see our design files in our [git repository](https://github.com/NextThingCo/CHIP_Pro-Hardware).
@@ -27,13 +27,13 @@ Yes, you can see our design files in our [git repository](https://github.com/Nex
 C.H.I.P. is still a huge part of what we do. We made C.H.I.P. Pro and Gadget so the enterprising members of the CHIPster community would have a great option for scalable hardware, software and infrastructure for their products.
 
 ## Where can I buy the C.H.I.P. Pro?
-Currently we’re offering the C.H.I.P. Pro Dev kit for $49 in our web store with an estimated shipping by the end of this year. C.H.I.P. Pro will be available in Q1 of 2017.
+Currently, we’re offering the C.H.I.P. Pro Dev kit for $49 in our web store with an estimated shipping by the end of this year. C.H.I.P. Pro will be available in Q1 of 2017.
 
 ##  How many may I order?
 As many or as few as you’d like. 1 to 1 million (or more). For larger orders, hit us up at [sales@nextthing.co](mailto:sales@nextthing.co)
 
 ## When will C.H.I.P. Pro ship?
-C.H.I.P. Pro Dev kits is shipping in late Q4 of 2016 and C.H.I.P. Pro will be available in any quantity starting Q1 of 2017.
+C.H.I.P. Pro Dev kits are shipping in late Q4 of 2016 and C.H.I.P. Pro will be available in any quantity starting Q1 of 2017.
 
 ##  What is the lead time on a C.H.I.P. Pro order?
 Once available in Q1 of 2017, small orders (1-20) will ship immediately. For large orders taking advantage of our factory flashing offering, there will be a lead time of 60 days.
