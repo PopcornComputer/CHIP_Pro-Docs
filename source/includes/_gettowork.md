@@ -109,19 +109,19 @@ The basic commands to connect are done in a connman terminal. You can learn more
 ```
 sudo connmanctl # enter the connman terminal
 
-> enable wifi # turn on wifi
-> scan wifi # find networks
-> agent on # let connman prompt for a password when needed
-> services # list all the visible networks so you can get the wifi_ id string
-> connect wifi_7cc70905cd77_4e5443_managed_psk #connman will then prompt for password
-> quit # get back to linux terminal
+>enable wifi # turn on wifi
+>scan wifi # find networks
+>agent on # let connman prompt for a password when needed
+>services # list all the visible networks so you can get the wifi_ id string
+>connect wifi_7cc70905cd77_4e5443_managed_psk #connect to wifi_ id, connman will then prompt for password
+>quit # get back to linux terminal
 ```
 
-If your network doesn't have a password
+If your network does not have a password connect using the `wifi_` id that does not have the word "hidden" in it.
 
 ### nmcli
 
-You may find `nmcli` is the gateway to your network. There's a lot of information about nmcli on the [archlinux site](https://wiki.archlinux.org/index.php/NetworkManager). If nmcli is what you need, here's the commands you can use to connect to a network using your serial connection in the terminal:
+You may find `nmcli` is the gateway to your network. There's a lot of information about nmcli on the [archlinux site](https://wiki.archlinux.org/index.php/NetworkManager). If nmcli is what you need, here are the commands you can use to connect to a network using your serial connection in the terminal:
 
 ```
 sudo nmcli d wifi # list visible wifi networks
@@ -177,7 +177,7 @@ If you attach an LED to the pin and ground, the LED will illuminate according to
 
 ### GPIO Done
 
-When you are done experimenting, you can tell the system to stop listening to the gpio pin:
+When you are done experimenting tell the system to stop listening to the gpio pin:
 
 ```shell
   sudo sh -c 'echo 132 > /sys/class/gpio/unexport'
