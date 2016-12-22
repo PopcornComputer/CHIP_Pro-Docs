@@ -5,6 +5,7 @@
 * 1x Two Wire Interface
 * 2x UART (1x 2-wire and 1x 4-wire)
 * SPI enabling SD card interface 
+* SPI Bus
 * 2x PWM
 * 6-bit ADC
 * I2S Digital Audio
