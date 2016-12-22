@@ -96,7 +96,7 @@ Note that for OS X you either need to list out all the tty devices with `ls /dev
 For Windows read [our guide](http://docs.getchip.com/chip.html#using-putty) on connecting with PuTTY or Cygwin.
 
 ## Log In
-Once you have connected via serial you'll be prompted for a username and password. The defaults are `chip` and `chip`. Change your password with `pwd`.
+Once you have connected via serial you'll be prompted for a username and password. The defaults are `chip` and `chip`. Change your password with `passwd`.
 
 ## Network
 
