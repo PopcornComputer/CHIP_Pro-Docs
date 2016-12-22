@@ -9,7 +9,7 @@ Storage | 4GB NAND SLC or 8GB NAND MLC | 512 MB SLC NAND
 SD Card Interface | Yes, 4-bit | Yes, 4-bit
 I2S Digital Audio | No | Yes
 Video Interface | Composite | No
-Certification | TKTK | Section 15 Modular
+Certification | Section 15 | Section 15 Modular
 Easy to Mass Produce with | No | Yes
 Easy to Play With | Yes | No
 Size | Big (40.64 mm x 60.50 mm) | Small (30 mm x 45 mm)

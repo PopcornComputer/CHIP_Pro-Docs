@@ -16,7 +16,6 @@ C.H.I.P. Pro has a three options for providing power to peripherals and sensors.
 
 If you need to provide power to a USB device connected to USB1, connect IPSOUT to an appropriate switching regulator to the USB connector pad on your circuit board.
 
-TKTK - images showing power connections?
 
 ## Get an Operating System
 
