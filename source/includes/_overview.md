@@ -16,13 +16,13 @@ The module offers all the popular interfaces you'd expect. With two UARTs, a Two
 
 C.H.I.P Pro is CE, IC, and FCC part 15 modularly certified, making integration into end products easy. The on-board Realtek 8723DS combination module provides compliant Wi-Fi B/G/N and Bluetooth 4.2 Low-Energy connectivity. A software controlled antenna path selects between the on-board chip antenna or a uFL antenna connector where several pre-certified antennas can be added to boost wireless transmit and receive range. 
 
-Charge or power from a battery, use an external power supply, or power it from USB. On-board Power management with the AXP209 provides plenty of power options to better match your applications: mobile, industrial, and low-power are all possible with C.H.I.P. Pro. 
+Charge or power from an AC/DC adapter or power it from USB or a rechargable battery. On-board Power management with the AXP209 provides plenty of power options to better match your applications: mobile, industrial, and low-power are all possible with C.H.I.P. Pro. 
 
 ![C.H.I.P. Pro](images/CHIP-Pro-Side-Crop.jpg)
 
 C.H.I.P. Pro is rated to operate between 2.9V-6V in temperatures ranging between 0 and 70 degrees Celsius and measures 45mm x 30mm.
 
-We can't wait to see how you'll integrate C.H.I.P Pro in to your next product.
+We can't wait to see how you'll integrate C.H.I.P Pro into your next product.
 
 ## Block Diagram
 
