@@ -4,7 +4,7 @@
 
 The C.H.I.P. Pro System-on-a-Module is designed to get you making great products instead of re-inventing computers. It's a low-cost, high-capability module that lets you focus on fast iterations of brilliant ideas that will be ready to manufacture.
 
-This document provides technical details on the module and basic guides for getting started with working with C.H.I.P. Pro. To get the most out of developing and designing for C.H.I.P. Pro, we recommend the [C.H.I.P. Pro Development Kit](http://docs.getchip.com/chipprodevkit.html).
+This document provides technical details on the module and basic guides for getting started with working with C.H.I.P. Pro. To get the most out of developing and designing for C.H.I.P. Pro, we recommend the [C.H.I.P. Pro Development Kit](http://docs.getchip.com/CHIP_Pr_DKit-Docs.html).
 
 ## Overview
 
