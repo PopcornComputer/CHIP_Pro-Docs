@@ -23,7 +23,7 @@ Like its larger brother C.H.I.P., C.H.I.P. Pro's GR8 SiP can run mainline Linux.
 
 ### Gadget OS
 
-There are several examples of the Gadget OS for the Developer's Kit. These examples are designed around the hardware on the Developer's Kit board. If you are building a circuit that incorporates mics and LEDs you can start with these examples and a bare C.H.I.P. Pro. Read more in the [developer's kit documentation](pro.html#flash-an-example)
+There are several examples of the Gadget OS for the Developer's Kit. These examples are designed around the hardware on the Developer's Kit board. If you are building a circuit that incorporates mics and LEDs you can start with these examples and a bare C.H.I.P. Pro. Read more in the [developer's kit documentation](http://docs.getchip.com/CHIP_Pro_DKit-Docs.html)
 
 ### Debian
 We provide a standard Debian distribution, complete with all the package managers and conveniences you know and love. This package is ideal for development, since it is more flexible than the buildroot-based Gadget OS. However, you will want to keep track of your dependencies to more easily transition to the more nimble Gadget OS.
@@ -200,4 +200,4 @@ sudo sh -c 'echo 132 > /sys/class/gpio/export'
 ```
 
 # Open Source
-The C.H.I.P. Pro is open source hardware. Get all the details in our [github repo](https://github.com/NextThingCo/C.H.I.P._Pro-Hardware).
+The C.H.I.P. Pro is open source hardware. Get all the details in our [github repo](https://github.com/NextThingCo/CHIP_Pro-Hardware).
