@@ -38,4 +38,4 @@ C.H.I.P. Pro is built around the GR8 System-in-Package that combines an Allwinne
 * Mali-400 GPU supporting OpenGL ES1.1/ 2.0 and OpenVG 1.1
 * 256MB DDR3 RAM
 
-More information about the GR8 SiP can be found on the [GR8 documentation page](http://docs.getchip.com/GR8.html) and in the [GR8 data sheet](https://github.com/NextThingCo/CHIP_Pro-Hardware/raw/master/Datasheets/GR8_Datasheet_v1.0.pdf)
+More information about the GR8 SiP can be found in the [GR8 data sheet](https://github.com/NextThingCo/CHIP_Pro-Hardware/raw/master/Datasheets/GR8_Datasheet_v1.0.pdf)
