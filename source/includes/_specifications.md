@@ -46,7 +46,7 @@
 
 ## Mechanical Drawing
 
-You can download a high resolution version of this image [here](CHIP-Pro-PCB.png)
+You can download a high resolution version of this image [here](images/CHIP-Pro-PCB.png)
 ![Mechanical Drawing](images/CHIP-Pro-PCB_sm.png)
 
 ### Dimensions
