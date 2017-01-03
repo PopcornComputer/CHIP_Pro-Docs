@@ -117,16 +117,26 @@ sudo connmanctl # enter the connman terminal
 >quit # get back to linux terminal
 ```
 
-If your network does not have a password connect using the `wifi_` id that does not have the word "hidden" in it.
+If your network does not have a password (ends with `managed_none`), you can connect using the `wifi_` id that does not have the word "hidden" in it.
+
+Confirm your connection with `ping -c 4 8.8.8.8` and get your IP address from the wlan0 line from `ip a`.
+
+#### ssh on buildroot
+
+Once you have your C.H.I.P. Pro on the network, chances are that you'll want to use `ssh` to connect to it. You can `ssh chip@<ip address>`. However, you'll probably want to switch to `root` once you are in. You can do that with the command `su` and use `root` as the password.
 
 ### nmcli
 
-You may find `nmcli` is the gateway to your network. There's a lot of information about nmcli on the [archlinux site](https://wiki.archlinux.org/index.php/NetworkManager). If nmcli is what you need, here are the commands you can use to connect to a network using your serial connection in the terminal:
+You may find `nmcli` is the gateway to your network if you are using a Debian linux image on C.H.I.P. Pro. There's a lot of information about nmcli on the [archlinux site](https://wiki.archlinux.org/index.php/NetworkManager). If nmcli is what you need, here are the commands you can use to connect to a network using your serial connection in the terminal:
 
 ```
 sudo nmcli d wifi # list visible wifi networks
 sudo nmcli d wifi connect "Network SSID Name" password "Your Password" ifname wlan0 # if network is hidden add this to end: hidden yes
 ```
+
+#### ssh on debian
+
+If you want to connect to C.H.I.P. Pro with `ssh` you will probably find it convenient to setup a unique name for your C.H.I.P. Pro. [This gist](https://gist.github.com/nyboer/1fc232e0d006b656d2b724698c7ff90f) has a simple script to make this easy.
 
 ### ping!
 
