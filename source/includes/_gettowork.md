@@ -37,7 +37,7 @@ We provide a standard Debian distribution, complete with all the package manager
 
 #### Flash
 
-Visit our OS flash site at [flash.getchip.com](http://flash.getchip.com) in Chrome or Chromium browser. Hold down the FEL button on C.H.I.P. Pro and follow all the instructions in the browser. If you haven't already, you'll be asked to install the C.H.I.P. Flasher Plug-in for Chrome.
+Visit our OS flash site at [flash.getchip.com](http://flash.getchip.com/pro) in Chrome or Chromium browser. Hold down the FEL button on C.H.I.P. Pro and follow all the instructions in the browser. If you haven't already, you'll be asked to install the C.H.I.P. Flasher Plug-in for Chrome.
 
 ### Use It 
 
