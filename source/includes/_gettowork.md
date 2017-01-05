@@ -16,6 +16,10 @@ C.H.I.P. Pro has three options for providing power to peripherals and sensors.
 
 If you need to provide power to a USB device connected to USB1, connect IPSOUT to an appropriate switching regulator to the USB connector pad on your circuit board.
 
+## Powering Off
+
+Ideally C.H.I.P. Pro wants to be powered off through a terminal window with the `poweroff` command. Alternatively, the connect PWR pin to GND for 7-10 seconds to power it off or disconnect power supply. 
+
 
 ## Get an Operating System
 
