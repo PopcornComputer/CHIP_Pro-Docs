@@ -92,7 +92,7 @@ If your OS is configured for Gadget serial, this is usually the easiest way to g
 
 ```
 screen /dev/tty.usbmodem1440 115200 #OS X
-screen /dev/tty.ACM0 115200         #Ubuntu
+screen /dev/ttyACM0 115200          #Linux
 ```
 
 Note that for OS X you either need to list out all the tty devices with `ls /dev/tty.usbm*` to find the actual ID or use the tab key to autocomplete, like `screen /dev/tty.usbm <tab>`.
