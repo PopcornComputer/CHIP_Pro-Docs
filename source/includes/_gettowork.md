@@ -73,7 +73,7 @@ From your computer's terminal use the command:
 
 ``` 
 screen /dev/tty.usbserial 115200 #OS X
-screen /dev/tty.USB0 115200      #Ubuntu
+screen /dev/ttyUSB0 115200       #Linux
 ```
 
 Another popular program besides screen is `cu`. 
