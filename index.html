@@ -1,0 +1,2719 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+		<link rel="shortcut icon" href="//s3-us-west-2.amazonaws.com/ntcpublic/icon-16.png" type="image/x-icon">
+    <link rel="icon" href="//s3-us-west-2.amazonaws.com/ntcpublic/icon-16.png" type="image/x-icon">
+		
+    <title>Next Thing Co. C.H.I.P. Pro Documentation</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight, .highlight .w {
+  color: #f8f8f2;
+  background-color: #272822;
+}
+.highlight .err {
+  color: #272822;
+  background-color: #f92672;
+}
+.highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #f4bf75;
+}
+.highlight .nt {
+  color: #f4bf75;
+}
+.highlight .o, .highlight .ow {
+  color: #f8f8f2;
+}
+.highlight .p, .highlight .pi {
+  color: #f8f8f2;
+}
+.highlight .gi {
+  color: #a6e22e;
+}
+.highlight .gd {
+  color: #f92672;
+}
+.highlight .gh {
+  color: #66d9ef;
+  background-color: #272822;
+  font-weight: bold;
+}
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+  color: #ae81ff;
+}
+.highlight .kc {
+  color: #fd971f;
+}
+.highlight .kt {
+  color: #fd971f;
+}
+.highlight .kd {
+  color: #fd971f;
+}
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+  color: #a6e22e;
+}
+.highlight .sr {
+  color: #a1efe4;
+}
+.highlight .si {
+  color: #cc6633;
+}
+.highlight .se {
+  color: #cc6633;
+}
+.highlight .nn {
+  color: #f4bf75;
+}
+.highlight .nc {
+  color: #f4bf75;
+}
+.highlight .no {
+  color: #f4bf75;
+}
+.highlight .na {
+  color: #66d9ef;
+}
+.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx {
+  color: #a6e22e;
+}
+.highlight .ss {
+  color: #a6e22e;
+}
+    </style>
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
+    
+    <link href="stylesheets/ntc_override.css" rel="stylesheet" media="screen" />
+    
+      <script src="javascripts/all.js"></script>
+  </head>
+
+  <body class="index" data-languages="[]">
+    <a href="#" id="nav-button">
+      <span>
+        NAVI
+        <img src="images/navbar.png" alt="Navbar" />
+      </span>
+    </a>
+    <div class="tocify-wrapper">
+    
+      <div class="nav-bar-logo">
+        <a href="index.html"><img src="images/ntclogo_doccorner.png" alt="Ntclogo doccorner" /></a>
+      </div>
+      
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <div id="toc">
+      </div>
+        <ul class="toc-footer">
+            <li><a href='https://github.com/getchip/CHIP_Pro-Docs'>Have something to add or change?<br>Visit our GitHub!</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        
+          <h1 id="c-h-i-p-pro-overview">C.H.I.P. Pro Overview</h1>
+
+<p><img src="images/CHIP-Pro-Side-ISO.png" alt="C.H.I.P. Pro" /></p>
+
+<p>The C.H.I.P. Pro System-on-a-Module is designed to get you making great products instead of re-inventing computers. It&rsquo;s a low-cost, high-capability module that lets you focus on fast iterations of brilliant ideas that will be ready to manufacture.</p>
+
+<p>This document provides technical details on the module and basic guides for getting started with working with C.H.I.P. Pro. To get the most out of developing and designing for C.H.I.P. Pro, we recommend the <a href="http://docs.getchip.com/chip_pro_devkit.html">C.H.I.P. Pro Development Kit</a>.</p>
+
+<h2 id="overview">Overview</h2>
+
+<p>C.H.I.P. Pro is a breadboard-friendly and surface-mount-ready computer designed from the ground up to power the next generation of smart devices.</p>
+
+<p>C.H.I.P. Pro is powered by GR8, a system-in-package (SiP) that was designed by us at Next Thing Co. GR8 features a 1GHz Allwinner R8 ARM Cortex-A8 processor, Mali400 GPU, and 256MB of Nanya DDR3 DRAM. in a 14mm x 14mm FBGA package. C.H.I.P. Pro adds to the GR8 with 512MB of high-speed NAND storage, WiFi and Bluetooth connectivity, power and battery management, pins for popular I/O busses, USB gadget, the verstatility of mainline Linux, all on a compact footprint.</p>
+
+<p>The module offers all the popular interfaces you&rsquo;d expect. With two UARTs, a Two Wire Interface, a parallel camera interface, SPI, two PWM channels, a USB 2.0 OTG, and a USB 2.0 Host, C.H.I.P. Pro is packed full of opportunity. Comprehensive audio handling includes a built-in 24-bit ADC/DAC for stereo audio in and out, One Wire Audio digital out, and I2S digital audio for interfacing with professional audio DACs.</p>
+
+<p>C.H.I.P Pro is CE, IC, and FCC part 15 modularly certified, making integration into end products easy. The on-board Realtek 8723DS combination module provides compliant Wi-Fi B/G/N and Bluetooth 4.2 Low-Energy connectivity. A software controlled antenna path selects between the on-board chip antenna or a uFL antenna connector where several pre-certified antennas can be added to boost wireless transmit and receive range. </p>
+
+<p>Charge or power from an AC/DC adapter or power it from USB or a rechargable battery. On-board Power management with the AXP209 provides plenty of power options to better match your applications: mobile, industrial, and low-power are all possible with C.H.I.P. Pro. </p>
+
+<p><img src="images/CHIP-Pro-Side-Crop.jpg" alt="C.H.I.P. Pro" /></p>
+
+<p>C.H.I.P. Pro is rated to operate between 2.9V-6V in temperatures ranging between 0 and 70 degrees Celsius and measures 45mm x 30mm.</p>
+
+<p>We can&rsquo;t wait to see how you&rsquo;ll integrate C.H.I.P Pro into your next product.</p>
+
+<h2 id="block-diagram">Block Diagram</h2>
+
+<p><img src="images/CHIP-Pro-Block-Diagram.png" alt="C.H.I.P. Pro Block Diagram" /></p>
+
+<h2 id="gr8-sip">GR8 SiP</h2>
+
+<p><img src="images/CHIP-Pro-Exploded-View.png" alt="GR8" /></p>
+
+<p>C.H.I.P. Pro is built around the GR8 System-in-Package that combines an Allwinner R8 with DDR3 memory on the same piece of silicon. Basic specifications are as follows:</p>
+
+<ul>
+<li>1GHz Next Thing Co. GR8 ARM Cortex-A8 with ARMv7 instruction set and NEON coprocessor</li>
+<li>Mali-400 GPU supporting OpenGL ES1.1/ 2.0 and OpenVG 1.1</li>
+<li>256MB DDR3 RAM</li>
+</ul>
+
+<p>More information about the GR8 SiP can be found in the <a href="https://github.com/NextThingCo/CHIP_Pro-Hardware/raw/master/Datasheets/GR8_Datasheet_v1.0.pdf">GR8 data sheet</a></p>
+
+          <h1 id="specifications">Specifications</h1>
+
+<h2 id="c-h-i-p-pro-exposed-interfaces">C.H.I.P. Pro Exposed Interfaces</h2>
+
+<ul>
+<li>1x Two Wire Interface</li>
+<li>2x UART (1x 2-wire and 1x 4-wire)</li>
+<li>SPI enabling SD card interface </li>
+<li>SPI Bus</li>
+<li>2x PWM</li>
+<li>6-bit ADC</li>
+<li>I2S Digital Audio</li>
+<li>S/PDIF IEC-60958 Digital Audio Input and Output </li>
+<li>2x USB HS/FS/LS
+
+<ul>
+<li>USB 2.0 Host</li>
+<li>USB 2.0 OTG</li>
+</ul></li>
+<li>Parallel Camera Interface </li>
+<li>3.3V DC supply</li>
+<li>27 GPIO</li>
+</ul>
+
+<h2 id="audio">Audio</h2>
+
+<ul>
+<li>Stereo analog input 44.1K or 48K sampling rate</li>
+<li>Stereo analog output 44.1K or 48K sampling rate</li>
+<li>Programmable phantom power for mic in</li>
+<li>Bi-directional I2S bus for external DAC codecs</li>
+</ul>
+
+<h2 id="power-and-battery-management">Power and Battery Management</h2>
+
+<ul>
+<li>AXP209 power management unit, connected to a dedicated I2C bus</li>
+<li>2.9V to 6V</li>
+<li>0 to 70 degrees Celsius </li>
+</ul>
+
+<h2 id="wireless-connectivity">Wireless Connectivity</h2>
+
+<ul>
+<li>Realtek 8723DS Combination Module</li>
+<li>Bluetooth 4.2 LE</li>
+<li>WiFi 802.11 b/g/n</li>
+<li>uFL antenna connector</li>
+<li>FCC/CE/IC certified</li>
+</ul>
+
+<h2 id="operating-system">Operating System</h2>
+
+<ul>
+<li>GadgetOS, a Linux optimized for GR8 and C.H.I.P. Pro</li>
+<li>Debian for C.H.I.P. Pro, for a familiar Linux experience</li>
+<li>Next Thing Co. rootfs on GitHub so developers can create their own Linux distro for C.H.I.P. Pro</li>
+</ul>
+
+<h2 id="mechanical-drawing">Mechanical Drawing</h2>
+
+<p>You can download a high resolution version of this image <a href="images/CHIP-Pro-PCB.png">here</a>
+<img src="images/CHIP-Pro-PCB_sm.png" alt="Mechanical Drawing" /></p>
+
+<h3 id="dimensions">Dimensions</h3>
+
+<p>Refer to the following diagram for the complete dimensions of C.H.I.P. Pro:</p>
+
+<p><img src="images/CHIPPro-dims.jpg" alt="C.H.I.P. Pro Dimensions" /></p>
+
+<h2 id="pcb-footprint">PCB Footprint</h2>
+
+<p>C.H.I.P. Pro is designed for scale so it&rsquo;s ready to drop into any SMT manufacturing line. The exterior dimensions for the PCB pads for C.H.I.P. Pro are 32 mm x 47.60 mm (1.26 in x 1.87 in). More detailed dimensions for your board layout are in the following diagram:</p>
+
+<p><img src="images/CHIP-Pro-Footprint.png" alt="C.H.I.P. Pro PCB Footprint" /></p>
+
+<h2 id="data-sheet">Data Sheet</h2>
+
+<p>While this documentation contains much of the needed technical info for C.H.I.P. Pro, the complete data sheet for C.H.I.P. Pro is available <a href="https://github.com/NextThingCo/CHIP_Pro-Hardware/raw/master/Datasheets/CHIP_PRO_Datasheet_v1.0.pdf">on our C.H.I.P. Pro Hardware github repo</a></p>
+
+          <h1 id="get-working-with-c-h-i-p-pro">Get Working With C.H.I.P. Pro</h1>
+
+<h2 id="power-in-power-out">Power In, Power Out</h2>
+
+<p>C.H.I.P. Pro can be powered in a few ways, all managed by the AXP209 power management circuit. For simple applications on the test desk, power can be provided over the micro USB connector from a USB power supply or powered USB hub. But C.H.I.P. is for building, and depending on the nature of your product, there are different power options to make it easier to make with C.H.I.P. Pro.</p>
+
+<ul>
+<li><strong>CHG-IN</strong> - connect 4.8 to 6 volts of power to this pin (and GND) to provide power for C.H.I.P. Pro. If you have a Lithium Polymer (LiPo) battery connected to BAT, then power provided to CHG-IN will also charge the battery. </li>
+<li><strong>BAT</strong> - connect a 3.7 volts Lithium Polymer (LiPo) battery to this pin (and GND) to provide power to C.H.I.P. Pro and receive charge from power inputs.</li>
+<li><strong>VBUS</strong> - connect 5 volts to this pin (and GND to pin 53) to provide power to C.H.I.P.. Power connected to VBUS will also charge a battery, just at a slower rate than from CHG-IN</li>
+</ul>
+
+<p>C.H.I.P. Pro has three options for providing power to peripherals and sensors.</p>
+
+<ul>
+<li><strong>VCC-3V3</strong> - provides 3.3V for sensors.</li>
+<li><strong>IPSOUT</strong> - the Intelligent Power Select provides up to 2.5 amps at up to 5 volts, depending on power provided at CHG-IN or VBUS. If a 3.7V LiPo battery is the only source of power, IPSOUT will provide a bit less than 3.7 volts. In general, the voltage at IPSOUT is a bit less than voltage in, with a max voltage of 5 volts.</li>
+<li><strong>PWRON</strong> - connect to ground to turn C.H.I.P. Pro on and boot the operating system.</li>
+</ul>
+
+<p>If you need to provide power to a USB device connected to USB1, connect IPSOUT to an appropriate switching regulator to the USB connector pad on your circuit board.</p>
+
+<h2 id="powering-off">Powering Off</h2>
+
+<p>Ideally C.H.I.P. Pro should be powered off through a terminal window using the <code class="prettyprint">poweroff</code> command. Alternatively, connect PWR pin to GND for 7-10 seconds to power off or disconnect power supply. </p>
+
+<h2 id="get-an-operating-system">Get an Operating System</h2>
+
+<p>Like its larger brother C.H.I.P., C.H.I.P. Pro&rsquo;s GR8 SiP can run mainline Linux. This provides security, flexibility, robust tools, and open-source options for getting your product working. In the interest of power consumption and storage space, we have several options to best fit your production.</p>
+
+<h3 id="gadget-os">Gadget OS</h3>
+
+<p>There are several examples of the Gadget OS for the Developer&rsquo;s Kit. These examples are designed around the hardware on the Developer&rsquo;s Kit board. If you are building a circuit that incorporates mics and LEDs you can start with these examples and a bare C.H.I.P. Pro. Read more in the <a href="http://docs.getchip.com/chip_pro_devkit.html">developer&rsquo;s kit documentation</a></p>
+
+<h3 id="debian">Debian</h3>
+
+<p>We provide a standard Debian distribution, complete with all the package managers and conveniences you know and love. This package is ideal for development, since it is more flexible than the buildroot-based Gadget OS. However, you will want to keep track of your dependencies to more easily transition to the more nimble Gadget OS.</p>
+
+<h4 id="things-you-will-need">Things you will need</h4>
+
+<ul>
+<li>C.H.I.P. Pro</li>
+<li>Standard-USB to micro-USB connector</li>
+<li>An appendage to hold down the FEL button</li>
+<li>Separate computer with <a href="https://www.google.com/chrome/browser/desktop/index.html">Chrome</a> or <a href="https://www.chromium.org/getting-involved/download-chromium">Chromium</a> browser</li>
+</ul>
+
+<h4 id="flash">Flash</h4>
+
+<p>Visit our OS flash site at <a href="http://flash.getchip.com/pro">flash.getchip.com</a> in Chrome or Chromium browser. Hold down the FEL button on C.H.I.P. Pro and follow all the instructions in the browser. If you haven&rsquo;t already, you&rsquo;ll be asked to install the C.H.I.P. Flasher Plug-in for Chrome.</p>
+
+<h3 id="use-it">Use It</h3>
+
+<p>Now that you have power and an operating system, you can connect to your C.H.I.P. Pro to test software and hardware, customize it, or load new software. There are two very important connections for this: serial and network. </p>
+
+<h2 id="serial-connection">Serial Connection</h2>
+
+<p>The most basic connection to C.H.I.P. Pro is a serial connection controlled through a host computer&rsquo;s terminal program.</p>
+
+<h3 id="uart">UART</h3>
+
+<h4 id="things-you-will-need">Things you will need</h4>
+
+<ul>
+<li>USB-UART cable (<a href="https://www.amazon.com/Armorview-PL2303HX-RS232-Module-Converter/dp/B008AGDTA4">for example</a>)</li>
+<li>Drivers</li>
+<li>Soldering gun</li>
+<li>Solder</li>
+<li>Pin headers</li>
+<li>Computer with monitor (for example, a <a href="http://www.getchip.com/">C.H.I.P.</a>!)</li>
+<li>Terminal program for Windows such as <a href="https://cygwin.com/">Cygwin</a> or <a href="http://www.chipkin.com/using-putty-for-serial-com-connections-hyperterminal-replacement/">PuTTY</a> (OS X and Linux have terminals built-in)</li>
+</ul>
+
+<p>A UART to USB serial connection between C.H.I.P. Pro and your computer offers the most comprehensive look at what&rsquo;s happening in C.H.I.P. Pro as it boots, since you can get all message output from the moment it starts booting. You&rsquo;ll need a USB to UART cable and the appropriate drivers for your computer&rsquo;s OS. </p>
+
+<p>For example, <a href="https://www.amazon.com/Armorview-PL2303HX-RS232-Module-Converter/dp/B008AGDTA4">this</a> cable uses the Prolific hardware, with drivers <a href="http://www.prolific.com.tw/US/ShowProduct.aspx?pcid=41&amp;showlevel=0041-0041">available on their site</a>. Another popular chipset for these cables is FTDI.</p>
+
+<p>Connect the cable to your computer and the UART pins on C.H.I.P. Pro. You&rsquo;ll need to solder some headers onto C.H.I.P. Pro for a reliable connection to the loose wires on the cable. The black cable goes to ground, green is usually RX, and white is usually TX, but there&rsquo;s no guarantee. So, make sure to check the manufacturer&rsquo;s product description for the correct pinouts. </p>
+
+<p>From your computer&rsquo;s terminal use the command:</p>
+<pre class="highlight plaintext"><code>screen /dev/tty.usbserial 115200 #OS X
+screen /dev/ttyUSB0 115200       #Linux
+</code></pre>
+<p>Another popular program besides screen is <code class="prettyprint">cu</code>. </p>
+
+<p>For Windows read <a href="http://docs.getchip.com/chip.html#using-putty">our guide</a> on connecting with PuTTY or Cygwin.</p>
+
+<h3 id="usb-gadget-serial">USB Gadget Serial</h3>
+
+<h4 id="things-you-will-need">Things you will need</h4>
+
+<ul>
+<li>USB A to micro-USB cable (<a href="http://www.cablewholesale.com/products/usb-firewire/usb-2.0-cables/product-10u2-03101bk.php">for example</a>)</li>
+<li>Computer with monitor (for example, a <a href="http://www.getchip.com/">C.H.I.P.</a>!)</li>
+<li>Terminal program for Windows such as <a href="https://cygwin.com/">Cygwin</a> or <a href="http://www.chipkin.com/using-putty-for-serial-com-connections-hyperterminal-replacement/">PuTTY</a> (OS X and Linux have terminals built-in)</li>
+</ul>
+
+<p>If your OS is configured for Gadget serial, this is usually the easiest way to get inside C.H.I.P. Pro&rsquo;s software. While you won&rsquo;t be able to get boot messages, since the serial emulation won&rsquo;t be ready, all you need is a USB A to micro-USB cable to connect C.H.I.P. Pro to your computer. From your computer&rsquo;s terminal:</p>
+<pre class="highlight plaintext"><code>screen /dev/tty.usbmodem1440 115200 #OS X
+screen /dev/ttyACM0 115200          #Linux
+</code></pre>
+<p>Note that for OS X you either need to list out all the tty devices with <code class="prettyprint">ls /dev/tty.usbm*</code> to find the actual ID or use the tab key to autocomplete, like <code class="prettyprint">screen /dev/tty.usbm &lt;tab&gt;</code>.</p>
+
+<p>For Windows read <a href="http://docs.getchip.com/chip.html#using-putty">our guide</a> on connecting with PuTTY or Cygwin.</p>
+
+<h2 id="log-in">Log In</h2>
+
+<p>Once you have connected via serial you&rsquo;ll be prompted for a username and password. The defaults are <code class="prettyprint">chip</code> and <code class="prettyprint">chip</code>. Change your password with <code class="prettyprint">passwd</code>.</p>
+
+<h2 id="network">Network</h2>
+
+<p>Once you have connected to C.H.I.P. Pro with a serial connection, you can set it up for network access. How this happens depends on the OS you have loaded onto C.H.I.P. Pro. Most likely you&rsquo;ll be able to make basic connections to a WiFi network using either <code class="prettyprint">connman</code> or <code class="prettyprint">nmcli</code> in the command line.</p>
+
+<h3 id="connman">Connman</h3>
+
+<p>The basic commands to connect are done in a connman terminal. You can learn more about connman <a href="https://wiki.archlinux.org/index.php/Connman">here</a></p>
+<pre class="highlight plaintext"><code>sudo connmanctl # enter the connman terminal
+
+&gt;enable wifi # turn on wifi
+&gt;scan wifi # find networks
+&gt;agent on # let connman prompt for a password when needed
+&gt;services # list all the visible networks so you can get the wifi_ id string
+&gt;connect wifi_7cc70905cd77_4e5443_managed_psk #connect to wifi_ id, connman will then prompt for password
+&gt;quit # get back to linux terminal
+</code></pre>
+<p>If your network does not have a password (ends with <code class="prettyprint">managed_none</code>), you can connect using the <code class="prettyprint">wifi_</code> id that does not have the word &ldquo;hidden&rdquo; in it.</p>
+
+<p>Confirm your connection with <code class="prettyprint">ping -c 4 8.8.8.8</code> and get your IP address from the wlan0 line from <code class="prettyprint">ip a</code>.</p>
+
+<h4 id="ssh-on-buildroot">ssh on buildroot</h4>
+
+<p>Once you have your C.H.I.P. Pro on the network, chances are that you&rsquo;ll want to use <code class="prettyprint">ssh</code> to connect to it. You can <code class="prettyprint">ssh chip@&lt;ip address&gt;</code>. However, you&rsquo;ll probably want to switch to <code class="prettyprint">root</code> once you are in. You can do that with the command <code class="prettyprint">su</code> and use <code class="prettyprint">root</code> as the password.</p>
+
+<h3 id="nmcli">nmcli</h3>
+
+<p>You may find <code class="prettyprint">nmcli</code> is the gateway to your network if you are using a Debian linux image on C.H.I.P. Pro. There&rsquo;s a lot of information about nmcli on the <a href="https://wiki.archlinux.org/index.php/NetworkManager">archlinux site</a>. If nmcli is what you need, here are the commands you can use to connect to a network using your serial connection in the terminal:</p>
+<pre class="highlight plaintext"><code>sudo nmcli d wifi # list visible wifi networks
+sudo nmcli d wifi connect "Network SSID Name" password "Your Password" ifname wlan0 # if network is hidden add this to end: hidden yes
+</code></pre>
+<h4 id="ssh-on-debian">ssh on debian</h4>
+
+<p>If you want to connect to C.H.I.P. Pro with <code class="prettyprint">ssh</code> you will probably find it convenient to setup a unique name for your C.H.I.P. Pro. <a href="https://gist.github.com/nyboer/1fc232e0d006b656d2b724698c7ff90f">This gist</a> has a simple script to make this easy.</p>
+
+<h3 id="ping">ping!</h3>
+
+<p>It&rsquo;s always reassuring to check that you have a connection with ping:</p>
+<pre class="highlight plaintext"><code>ping 8.8.8.8 #google dns server
+</code></pre>
+<h2 id="access-i-o-via-sysfs">Access I/O via sysfs</h2>
+
+<h3 id="gpio-input">GPIO Input</h3>
+
+<p>These lines of code will let us read values on pin CSIDO, which corresponds to pin 132 in the linux sysfs (CSID0-CSID7 have numbers 132-139) First, we tell the system we want to listen to this pin:</p>
+<pre class="highlight shell"><code>  sudo sh -c <span class="s1">'echo 132 &gt; /sys/class/gpio/export'</span>
+</code></pre>
+<p>View the mode of the pin. This should return “in”:</p>
+<pre class="highlight shell"><code>  cat /sys/class/gpio/gpio132/direction
+</code></pre>
+<p>Connect a jumper wire or switch between Pin CSID0 and GND. Now use this line of code to read the value:</p>
+<pre class="highlight shell"><code>  cat /sys/class/gpio/gpio132/value
+</code></pre>
+<h3 id="gpio-output">GPIO Output</h3>
+
+<p>You could also change the mode of a pin from “in” to “out”</p>
+<pre class="highlight shell"><code>  sudo sh -c <span class="s1">'echo out &gt; /sys/class/gpio/gpio132/direction'</span>
+</code></pre>
+<p>Now that it&rsquo;s in output mode, you can write a value to the pin:</p>
+<pre class="highlight shell"><code>  sudo sh -c <span class="s1">'echo 1 &gt; /sys/class/gpio/gpio132/value'</span>
+</code></pre>
+<p>If you attach an LED to the pin and ground, the LED will illuminate according to your control messages.</p>
+
+<h3 id="gpio-done">GPIO Done</h3>
+
+<p>When you are done experimenting tell the system to stop listening to the gpio pin:</p>
+<pre class="highlight shell"><code>  sudo sh -c <span class="s1">'echo 132 &gt; /sys/class/gpio/unexport'</span>
+</code></pre>
+<h3 id="finding-gpio-pin-names">Finding GPIO Pin Names</h3>
+
+<p>You can calculate the sysfs pin number using the <a href="https://github.com/NextThingCo/CHIP-Hardware/blob/master/CHIP%5Bv1_0%5D/CHIPv1_0-BOM-Datasheets/Allwinner%20R8%20Datasheet%20V1.2.pdf">Allwinner R8 Datasheet</a>, starting on page 18. </p>
+
+<p>The letter index is a multiple of 32 (where A=0), and the number is an offset. For example PE4 is <code class="prettyprint">CSID_D0</code> so</p>
+<pre class="highlight plaintext"><code>E=4
+(32*4)+4 = 132
+</code></pre>
+<p>Therefore, listening to CSID0 in sysfs would begin with</p>
+<pre class="highlight plaintext"><code>sudo sh -c 'echo 132 &gt; /sys/class/gpio/export'
+</code></pre>
+<h1 id="open-source">Open Source</h1>
+
+<p>The C.H.I.P. Pro is open source hardware. Get all the details in our <a href="https://github.com/NextThingCo/CHIP_Pro-Hardware">github repo</a>.</p>
+
+          <h1 id="pin-descriptions">Pin Descriptions</h1>
+
+<p><img src="images/CHIP-Pro-Pinout.png" alt="C.H.I.P. Pro Pins" /></p>
+
+<p>The C.H.I.P. Pro has a number of specialized pins for input and output, plus 27 general purpose input and output (GPIO) pins. The image above shows the pin location and muxing on C.H.I.P. Pro, and tables below organize pins according to their specialized functions.</p>
+
+<ul>
+<li>Pin Number</li>
+<li>Port </li>
+<li>GR8 Pin Name </li>
+<li>Signal Description</li>
+<li>Type</li>
+</ul>
+
+<p>For more detailed information about pins on C.H.I.P. Pro and the GR8, please see the data sheets available <a href="https://github.com/NextThingCo">here</a>.</p>
+
+<h2 id="battemp">BATTEMP</h2>
+
+<table><thead>
+<tr>
+<th>Pin Number</th>
+<th>Port</th>
+<th>GR8 Pin Name</th>
+<th>Signal Description</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>7</td>
+<td>NA</td>
+<td>BATTEMP</td>
+<td>Thermistor connection for battery heat detection</td>
+<td>I</td>
+</tr>
+</tbody></table>
+
+<h2 id="pwm">PWM</h2>
+
+<table><thead>
+<tr>
+<th>Pin Number</th>
+<th>Port</th>
+<th>GR8 Pin Name</th>
+<th>Signal Description</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>9</td>
+<td>PB2</td>
+<td>PWM0</td>
+<td>Pulse Width Module Channel0 Output</td>
+<td>O</td>
+</tr>
+<tr>
+<td>10</td>
+<td>PG13</td>
+<td>PWM1</td>
+<td>Pulse Width Module Channel1 Output</td>
+<td>O</td>
+</tr>
+</tbody></table>
+
+<h2 id="twi1">TWI1</h2>
+
+<table><thead>
+<tr>
+<th>Pin Number</th>
+<th>Port</th>
+<th>GR8 Pin Name</th>
+<th>Signal Description</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>11</td>
+<td>PB16</td>
+<td>TWI1-SCK</td>
+<td>TWI0 Clock</td>
+<td>I/O</td>
+</tr>
+<tr>
+<td>12</td>
+<td>PB15</td>
+<td>TWI1-SDA</td>
+<td>TWI0 Data/Address</td>
+<td>I/O</td>
+</tr>
+</tbody></table>
+
+<h2 id="uart-universal-asynchronous-receiver-transmitter">UART – Universal Asynchronous Receiver/Transmitter</h2>
+
+<table><thead>
+<tr>
+<th>Pin Number</th>
+<th>Port</th>
+<th>GR8 Pin Name</th>
+<th>Signal Description</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>44</td>
+<td>PG3</td>
+<td>UART1-TX</td>
+<td>UART1 Data Transmit</td>
+<td>O</td>
+</tr>
+<tr>
+<td>43</td>
+<td>PG4</td>
+<td>UART1-RX</td>
+<td>UART1 Data Receive</td>
+<td>I</td>
+</tr>
+<tr>
+<td>13</td>
+<td>PD2</td>
+<td>UART2-TX</td>
+<td>UART2 Data Transmit</td>
+<td>I</td>
+</tr>
+<tr>
+<td>14</td>
+<td>PD3</td>
+<td>UART2-RX</td>
+<td>UART2 Data Receive</td>
+<td>O</td>
+</tr>
+<tr>
+<td>15</td>
+<td>PD4</td>
+<td>UART2-CTS</td>
+<td>UART2 Data Clear to Send</td>
+<td>I</td>
+</tr>
+<tr>
+<td>16</td>
+<td>PD5</td>
+<td>UART2-RTS</td>
+<td>UART2 Data Request to Send</td>
+<td>I</td>
+</tr>
+</tbody></table>
+
+<h2 id="audio-codec">Audio Codec</h2>
+
+<table><thead>
+<tr>
+<th>Pin Number</th>
+<th>Port</th>
+<th>GR8 Pin Name</th>
+<th>Signal Description</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>26</td>
+<td>NA</td>
+<td>AGND</td>
+<td>Audio Codec Analog Ground</td>
+<td>G</td>
+</tr>
+<tr>
+<td>19</td>
+<td>NA</td>
+<td>HPCOM</td>
+<td>Headphone Common Reference Output</td>
+<td>AO</td>
+</tr>
+<tr>
+<td>18</td>
+<td>NA</td>
+<td>HPL</td>
+<td>Headphone Left Channel Output</td>
+<td>AO</td>
+</tr>
+<tr>
+<td>20</td>
+<td>NA</td>
+<td>HPR</td>
+<td>Headphone Right Channel Output</td>
+<td>AO</td>
+</tr>
+<tr>
+<td>27</td>
+<td>NA</td>
+<td>MICIN1</td>
+<td>Microphone Input</td>
+<td>AI</td>
+</tr>
+<tr>
+<td>28</td>
+<td>NA</td>
+<td>MICIN2</td>
+<td>Microphone Input</td>
+<td>AI</td>
+</tr>
+<tr>
+<td>29</td>
+<td>NA</td>
+<td>VMIC</td>
+<td>Bias Voltage Out</td>
+<td>AO</td>
+</tr>
+</tbody></table>
+
+<h2 id="i2s">I2S</h2>
+
+<table><thead>
+<tr>
+<th>Pin Number</th>
+<th>Port</th>
+<th>GR8 Pin Name</th>
+<th>Signal Description</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>21</td>
+<td>PB5</td>
+<td>I2S-MCLK</td>
+<td>I2S Master Clock</td>
+<td>O</td>
+</tr>
+<tr>
+<td>22</td>
+<td>PB6</td>
+<td>I2S-BCLK</td>
+<td>I2S Bit Clock</td>
+<td>I/O</td>
+</tr>
+<tr>
+<td>23</td>
+<td>PB7</td>
+<td>I2S-LRCK</td>
+<td>I2S Left/Right Channel Select Clock</td>
+<td>I/O</td>
+</tr>
+<tr>
+<td>24</td>
+<td>PB8</td>
+<td>I2S-DO</td>
+<td>I2S Data Output</td>
+<td>O</td>
+</tr>
+<tr>
+<td>25</td>
+<td>PB9</td>
+<td>I2S-DI</td>
+<td>I2S Data Input</td>
+<td>I</td>
+</tr>
+</tbody></table>
+
+<h2 id="owa-one-wire-audio">OWA – One Wire Audio</h2>
+
+<table><thead>
+<tr>
+<th>Pin Number</th>
+<th>Port</th>
+<th>GR8 Pin Name</th>
+<th>Signal Description</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>9</td>
+<td>PB2</td>
+<td>OWA-DO</td>
+<td>OWA Data Output</td>
+<td>O</td>
+</tr>
+</tbody></table>
+
+<h2 id="lradc">LRADC</h2>
+
+<table><thead>
+<tr>
+<th>Pin Number</th>
+<th>Port</th>
+<th>GR8 Pin Name</th>
+<th>Signal Description</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>42</td>
+<td>NA</td>
+<td>LRADC0</td>
+<td>ADC Input Channel0 for Multi-Button Input</td>
+<td>I</td>
+</tr>
+</tbody></table>
+
+<h2 id="spi-serial-peripheral-interface">SPI – Serial Peripheral Interface</h2>
+
+<table><thead>
+<tr>
+<th>Pin Number</th>
+<th>Port</th>
+<th>GR8 Pin Name</th>
+<th>Signal Description</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>41</td>
+<td>PE0</td>
+<td>SPI2-CS0</td>
+<td>SPI2 Chip Slect Signal (active low)</td>
+<td>I/O</td>
+</tr>
+<tr>
+<td>40</td>
+<td>PE1</td>
+<td>SPI2-CLK</td>
+<td>SPI2 Clock Signal</td>
+<td>I/O</td>
+</tr>
+<tr>
+<td>39</td>
+<td>PE2</td>
+<td>SPI2-MISO</td>
+<td>SPI2 Master Data In, Slave Data Out</td>
+<td>I/O</td>
+</tr>
+<tr>
+<td>38</td>
+<td>PE3</td>
+<td>SPI2-MOSI</td>
+<td>SPI2 Master Data Out, Slave Data In</td>
+<td>I/O</td>
+</tr>
+</tbody></table>
+
+<h2 id="d0-d7-general-purpose-in-out">D0-D7 – General Purpose In/Out</h2>
+
+<table><thead>
+<tr>
+<th>Pin Number</th>
+<th>Port Name</th>
+<th>GR8 Pin Name</th>
+<th>Signal Description</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>37-30</td>
+<td>D0-D7</td>
+<td>GPIO</td>
+<td>Digital I/O</td>
+<td>I/O</td>
+</tr>
+</tbody></table>
+
+<h2 id="csi-camera-sensor-interface">CSI – Camera Sensor Interface</h2>
+
+<table><thead>
+<tr>
+<th>Pin Number</th>
+<th>Port Name</th>
+<th>GR8 Pin Name</th>
+<th>Signal Description</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>41</td>
+<td>PE0</td>
+<td>CSI-PCLK</td>
+<td>CSI Pixel Clock</td>
+<td>I</td>
+</tr>
+<tr>
+<td>40</td>
+<td>PE1</td>
+<td>CSI-MCLK</td>
+<td>CSI Master Clock</td>
+<td>O</td>
+</tr>
+<tr>
+<td>39</td>
+<td>PE2</td>
+<td>CSI-HSYNC</td>
+<td>CSI Horizontal Sync</td>
+<td>I</td>
+</tr>
+<tr>
+<td>38</td>
+<td>PE3</td>
+<td>CSI-VSYNC</td>
+<td>CSI Vertical Sync</td>
+<td>I</td>
+</tr>
+<tr>
+<td>37-30</td>
+<td>PE4-PE11</td>
+<td>CSI-Data[7:0]</td>
+<td>CSI Data Bit</td>
+<td>I</td>
+</tr>
+</tbody></table>
+
+<h2 id="sd-mmc">SD/MMC</h2>
+
+<table><thead>
+<tr>
+<th>Pin Number</th>
+<th>Port Name</th>
+<th>GR8 Pin Name</th>
+<th>Signal Description</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>37-34</td>
+<td>PE4-PE7</td>
+<td>SDC2-D[3:0]</td>
+<td>SDC2 Data Bit [3:0]</td>
+<td>I/O</td>
+</tr>
+<tr>
+<td>33</td>
+<td>PE8</td>
+<td>SDC2-CMD</td>
+<td>SDC2 Command Signal</td>
+<td>I/O</td>
+</tr>
+<tr>
+<td>32</td>
+<td>PE9</td>
+<td>SDC2-CLK</td>
+<td>SDC2 Clock</td>
+<td>O</td>
+</tr>
+</tbody></table>
+
+<h2 id="external-interrupt">External Interrupt</h2>
+
+<table><thead>
+<tr>
+<th>Pin Number</th>
+<th>Port Name</th>
+<th>GR8 Pin Name</th>
+<th>Signal Description</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>44</td>
+<td>PG3</td>
+<td>EINT3</td>
+<td>External Interupt Input</td>
+<td>I</td>
+</tr>
+<tr>
+<td>42</td>
+<td>PG4</td>
+<td>EINT4</td>
+<td>External Interupt Input</td>
+<td>I</td>
+</tr>
+<tr>
+<td>10</td>
+<td>PG13</td>
+<td>EINT13</td>
+<td>External Interupt Input</td>
+<td>I</td>
+</tr>
+<tr>
+<td>21</td>
+<td>PB5</td>
+<td>EINT19</td>
+<td>External Interupt Input</td>
+<td>I</td>
+</tr>
+<tr>
+<td>25</td>
+<td>PB9</td>
+<td>EINT24</td>
+<td>External Interupt Input</td>
+<td>I</td>
+</tr>
+</tbody></table>
+
+<h2 id="usb1-and-usb0">USB1 and USB0</h2>
+
+<table><thead>
+<tr>
+<th>Pin Number</th>
+<th>Port Name</th>
+<th>GR8 Pin Name</th>
+<th>Signal Description</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>52</td>
+<td>UDM0</td>
+<td>USB0-DM</td>
+<td>USB0 D- Signal</td>
+<td>A I/O</td>
+</tr>
+<tr>
+<td>51</td>
+<td>UDP0</td>
+<td>USB0-DP</td>
+<td>USB0 D+ Signal</td>
+<td>A I/O</td>
+</tr>
+<tr>
+<td>48</td>
+<td>UDM1</td>
+<td>USB1-DM</td>
+<td>USB1 D- Signal</td>
+<td>A I/O</td>
+</tr>
+<tr>
+<td>47</td>
+<td>UDP1</td>
+<td>USB1-DP</td>
+<td>USB1 D+ Signal</td>
+<td>A I/O</td>
+</tr>
+<tr>
+<td>50</td>
+<td>VUSB</td>
+<td>VCC-USB</td>
+<td>VBUS Power Supply</td>
+<td>P</td>
+</tr>
+</tbody></table>
+
+<p>Note: The on-board micro-USB connector is wired in series with the castellated edge points at VBUS, UDP0, UDM0, and GND. If you connect a USB host to both the castellated edges AND the connector, at best your USB will no longer work, at worst you may damage your equipment. </p>
+
+          <h1 id="c-h-i-p-pro-faq">C.H.I.P. Pro FAQ</h1>
+
+<p><img src="images/CHIP-Pro-Straight-Crop.jpg" alt="C.H.I.P. Pro" /></p>
+
+<h2 id="what-are-the-c-h-i-p-pro-specifications">What are the C.H.I.P. Pro specifications?</h2>
+
+<ul>
+<li>1GHz Next Thing Co. GR8 processor - ARM Cortex-A8 with ARMv7 instruction set and NEON instruction set </li>
+<li>Mali-400 supporting OpenGL ES1.1 /2.0 and OpenVG 1.1</li>
+<li>512MB NAND flash storage</li>
+<li>256MB DDR3 RAM</li>
+<li>WiFi B/G/N</li>
+<li>Bluetooth 4.2 LE</li>
+<li>I2S</li>
+<li>1x Two Wire Interface </li>
+<li>2x UART (1x 2-wire and 1x 4-wire)</li>
+<li>2x SPI controllers</li>
+<li>27 GPIO</li>
+</ul>
+
+<h2 id="how-much-does-c-h-i-p-pro-cost">How much does C.H.I.P. Pro cost?</h2>
+
+<p>C.H.I.P. Pro costs $16.</p>
+
+<h2 id="are-there-quantity-discounts">Are there quantity discounts?</h2>
+
+<p>C.H.I.P. Pro is $16 no matter how many you order. But, if you have to ask you should contact <a href="mailto:sales@nextthing.co">sales@nextthing.co</a>. </p>
+
+<h2 id="is-the-c-h-i-p-pro-open-source">Is the C.H.I.P. Pro open source?</h2>
+
+<p>Yes, you can see our design files in our <a href="https://github.com/NextThingCo/CHIP_Pro-Hardware">git repository</a>.</p>
+
+<h2 id="does-c-h-i-p-pro-replace-c-h-i-p">Does C.H.I.P. Pro replace C.H.I.P.?</h2>
+
+<p>C.H.I.P. is still a huge part of what we do. We made C.H.I.P. Pro and Gadget so the enterprising members of the CHIPster community would have a great option for scalable hardware, software and infrastructure for their products.</p>
+
+<h2 id="where-can-i-buy-the-c-h-i-p-pro">Where can I buy the C.H.I.P. Pro?</h2>
+
+<p>Currently, we’re offering the C.H.I.P. Pro Dev kit for $49 in our web store with an estimated shipping by the end of this year. C.H.I.P. Pro will be available in Q1 of 2017.</p>
+
+<h2 id="how-many-may-i-order">How many may I order?</h2>
+
+<p>As many or as few as you’d like. 1 to 1 million (or more). For larger orders, hit us up at <a href="mailto:sales@nextthing.co">sales@nextthing.co</a></p>
+
+<h2 id="when-will-c-h-i-p-pro-ship">When will C.H.I.P. Pro ship?</h2>
+
+<p>C.H.I.P. Pro Dev kits are shipping in late Q4 of 2016 and C.H.I.P. Pro will be available in any quantity starting Q1 of 2017.</p>
+
+<h2 id="what-is-the-lead-time-on-a-c-h-i-p-pro-order">What is the lead time on a C.H.I.P. Pro order?</h2>
+
+<p>Once available in Q1 of 2017, small orders (1-20) will ship immediately. For large orders taking advantage of our factory flashing offering, there will be a lead time of 60 days.</p>
+
+<h2 id="i-made-a-c-h-i-p-prototype-will-it-be-hardware-and-software-compatible-with-gr8">I made a C.H.I.P. prototype, will it be hardware and software compatible with GR8?</h2>
+
+<p>Yes! GR8 has the same Allwinner R8 processor that is in C.H.I.P., so your C.H.I.P. software is 100% compatible with C.H.I.P. Pro. We believe you shouldn’t have to change your software to go into production.</p>
+
+          <h1 id="c-h-i-p-v-c-h-i-p-pro">C.H.I.P v C.H.I.P Pro</h1>
+
+<p>C.H.I.P and C.H.I.P Pro have a lot of similarities, but there are some very important distinctions that go beyond the obvious size differences. </p>
+
+<table><thead>
+<tr>
+<th>feature</th>
+<th>C.H.I.P</th>
+<th>C.H.I.P Pro</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>RAM</td>
+<td>512 MB</td>
+<td>256 MB</td>
+</tr>
+<tr>
+<td>Storage</td>
+<td>4GB NAND SLC or 8GB NAND MLC</td>
+<td>512 MB SLC NAND</td>
+</tr>
+<tr>
+<td>SD Card Interface</td>
+<td>Yes, 4-bit</td>
+<td>Yes, 4-bit</td>
+</tr>
+<tr>
+<td>I2S Digital Audio</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Video Interface</td>
+<td>Composite</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Certification</td>
+<td>Section 15</td>
+<td>Section 15 Modular</td>
+</tr>
+<tr>
+<td>Easy to Mass Produce with</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Easy to Play With</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Size</td>
+<td>Big (40.64 mm x 60.50 mm)</td>
+<td>Small (30 mm x 45 mm)</td>
+</tr>
+<tr>
+<td>Pin Headers</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Operating System</td>
+<td>Debian</td>
+<td>Gadget</td>
+</tr>
+<tr>
+<td>SOC</td>
+<td>Allwinner R8 ARM7</td>
+<td>Next Thing GR8 ARM7</td>
+</tr>
+<tr>
+<td>Speed</td>
+<td>1 Ghz</td>
+<td>1 Ghz</td>
+</tr>
+<tr>
+<td>Wifi</td>
+<td>B/G/N 2.4GHz (Realtek RTL8723BS)</td>
+<td>B/G/N 2.4GHz (Realtex RTL8723DS)</td>
+</tr>
+<tr>
+<td>Bluetooth</td>
+<td>4.0</td>
+<td>4.2</td>
+</tr>
+<tr>
+<td>PWM</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Audio Input</td>
+<td>1 channel</td>
+<td>2 channel</td>
+</tr>
+</tbody></table>
+
+<p>If you are looking for a more C.H.I.P-like experience with connectors and LEDS, we recommend the <a href="http://www.getchip.com/pages/chippro.html">Development Kit</a>. </p>
+
+          <h1 id="gr8-pins-in-c-h-i-p-pro">GR8 Pins in C.H.I.P. Pro</h1>
+
+<table><thead>
+<tr>
+<th>Function</th>
+<th>Pin Name</th>
+<th>On C.H.I.P. Pro</th>
+<th>Future Use</th>
+<th>Multi2</th>
+<th>Multi3</th>
+<th>Multi4</th>
+<th>Multi5</th>
+<th>Multi6</th>
+<th>Multi7</th>
+<th></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>PB(21)</td>
+<td>PB0</td>
+<td></td>
+<td>TWI0</td>
+<td>TWI0_SCK</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PB1</td>
+<td></td>
+<td>TWI0</td>
+<td>TWI0_SDA</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PB2</td>
+<td>PWM0</td>
+<td></td>
+<td>PWM0</td>
+<td>SPDIF_DO</td>
+<td></td>
+<td></td>
+<td>EINT16</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PB3</td>
+<td></td>
+<td>IR</td>
+<td>IR_TX</td>
+<td></td>
+<td></td>
+<td></td>
+<td>EINT17</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PB4</td>
+<td></td>
+<td>IR</td>
+<td>IR_RX</td>
+<td></td>
+<td></td>
+<td></td>
+<td>EINT18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PB5</td>
+<td>I2S</td>
+<td></td>
+<td>I2S_MCLK</td>
+<td></td>
+<td></td>
+<td></td>
+<td>EINT19</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PB6</td>
+<td>I2S</td>
+<td></td>
+<td>I2S_BCLK</td>
+<td></td>
+<td></td>
+<td></td>
+<td>EINT20</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PB7</td>
+<td>I2S</td>
+<td></td>
+<td>I2S_LRCK</td>
+<td></td>
+<td></td>
+<td></td>
+<td>EINT21</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PB8</td>
+<td>I2S</td>
+<td></td>
+<td>I2S_DO</td>
+<td></td>
+<td></td>
+<td></td>
+<td>EINT22</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PB9</td>
+<td>I2S</td>
+<td></td>
+<td>I2S_DI</td>
+<td>SPDIF_DI</td>
+<td></td>
+<td></td>
+<td>EINT23</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PB10</td>
+<td>SPDIF</td>
+<td></td>
+<td>SPI2_CS1</td>
+<td>SPDIF_DO</td>
+<td></td>
+<td></td>
+<td>EINT24</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PB11</td>
+<td></td>
+<td>JTAG0</td>
+<td>SPI2_CS0</td>
+<td>JTAG_MS0</td>
+<td></td>
+<td></td>
+<td>EINT25</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PB12</td>
+<td></td>
+<td>JTAG0</td>
+<td>SPI2_CLK</td>
+<td>JTAG_CK0</td>
+<td></td>
+<td></td>
+<td>EINT26</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PB13</td>
+<td></td>
+<td>JTAG0</td>
+<td>SPI2_MOSI</td>
+<td>JTAG_DO0</td>
+<td></td>
+<td></td>
+<td>EINT27</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PB14</td>
+<td></td>
+<td>JTAG0</td>
+<td>SPI2_MISO</td>
+<td>JTAG_DI0</td>
+<td></td>
+<td></td>
+<td>EINT28</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PB15</td>
+<td>TWI1</td>
+<td></td>
+<td>TWI1_SCK</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PB16</td>
+<td>TWI1</td>
+<td></td>
+<td>TWI1_SDA</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PB17</td>
+<td></td>
+<td>TWI2</td>
+<td>TWI2_SCK</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PB18</td>
+<td></td>
+<td>TWI2</td>
+<td>TWI2_SDA</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>PC(20)</td>
+<td>PC0</td>
+<td>NAND</td>
+<td></td>
+<td>NWE</td>
+<td>SPI0_MOSI</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PC1</td>
+<td>NAND</td>
+<td></td>
+<td>NALE</td>
+<td>SPI0_MISO</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PC2</td>
+<td>NAND</td>
+<td></td>
+<td>NCLE</td>
+<td>SPI0_CLK</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PC3</td>
+<td>NAND</td>
+<td></td>
+<td>NCE1</td>
+<td>SPI0_CS0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PC4</td>
+<td>NAND</td>
+<td></td>
+<td>NCE0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PC5</td>
+<td>NAND</td>
+<td></td>
+<td>NRE</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PC6</td>
+<td>NAND</td>
+<td></td>
+<td>NRB0</td>
+<td>SDC2_CMD</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PC7</td>
+<td>NAND</td>
+<td></td>
+<td>NRB1</td>
+<td>SDC2_CLK</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PC8</td>
+<td>NAND</td>
+<td></td>
+<td>NDQ0</td>
+<td>SDC2_D0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PC9</td>
+<td>NAND</td>
+<td></td>
+<td>NDQ1</td>
+<td>SDC2_D1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PC10</td>
+<td>NAND</td>
+<td></td>
+<td>NDQ2</td>
+<td>SDC2_D2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PC11</td>
+<td>NAND</td>
+<td></td>
+<td>NDQ3</td>
+<td>SDC2_D3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PC12</td>
+<td>NAND</td>
+<td></td>
+<td>NDQ4</td>
+<td>SDC2_D4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PC13</td>
+<td>NAND</td>
+<td></td>
+<td>NDQ5</td>
+<td>SDC2_D5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PC14</td>
+<td>NAND</td>
+<td></td>
+<td>NDQ6</td>
+<td>SDC2_D6</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PC15</td>
+<td>NAND</td>
+<td></td>
+<td>NDQ7</td>
+<td>SDC2_D7</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PC19</td>
+<td>NAND</td>
+<td></td>
+<td>NDQS</td>
+<td>UART2_RX</td>
+<td>UART3_RTS</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PD2</td>
+<td>UART2</td>
+<td>LCD</td>
+<td>LCD_D2</td>
+<td>UART2_TX</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PD3</td>
+<td>UART2</td>
+<td>LCD</td>
+<td>LCD_D3</td>
+<td>UART2_RX</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PD4</td>
+<td>UART2</td>
+<td>LCD</td>
+<td>LCD_D4</td>
+<td>UART2_CTS</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PD5</td>
+<td>UART2</td>
+<td>LCD</td>
+<td>LCD_D5</td>
+<td>UART2_RTS</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PD6</td>
+<td></td>
+<td>LCD</td>
+<td>LCD_D6</td>
+<td>ECRS</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PD7</td>
+<td></td>
+<td>LCD</td>
+<td>LCD_D7</td>
+<td>ECOL</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PD10</td>
+<td></td>
+<td>LCD</td>
+<td>LCD_D10</td>
+<td>ERXD0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PD11</td>
+<td></td>
+<td>LCD</td>
+<td>LCD_D11</td>
+<td>ERXD1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PD12</td>
+<td></td>
+<td>LCD</td>
+<td>LCD_D12</td>
+<td>ERXD2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PD13</td>
+<td></td>
+<td>LCD</td>
+<td>LCD_D13</td>
+<td>ERXD3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PD14</td>
+<td></td>
+<td>LCD</td>
+<td>LCD_D14</td>
+<td>ERXCK</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PD15</td>
+<td></td>
+<td>LCD</td>
+<td>LCD_D15</td>
+<td>ERXERR</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PD18</td>
+<td></td>
+<td>LCD</td>
+<td>LCD_D18</td>
+<td>ERXDV</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PD19</td>
+<td></td>
+<td>LCD</td>
+<td>LCD_D19</td>
+<td>ETXD0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PD20</td>
+<td></td>
+<td>LCD</td>
+<td>LCD_D20</td>
+<td>ETXD1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PD21</td>
+<td></td>
+<td>LCD</td>
+<td>LCD_D21</td>
+<td>ETXD2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PD22</td>
+<td></td>
+<td>LCD</td>
+<td>LCD_D22</td>
+<td>ETXD3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PD23</td>
+<td></td>
+<td>LCD</td>
+<td>LCD_D23</td>
+<td>ETXEN</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PD24</td>
+<td></td>
+<td>LCD</td>
+<td>LCD_CLK</td>
+<td>ETXCK</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PD25</td>
+<td></td>
+<td>LCD</td>
+<td>LCD_DE</td>
+<td>ETXERR</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PD26</td>
+<td></td>
+<td>LCD</td>
+<td>LCD_HSYNC</td>
+<td>EMDC</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PD27</td>
+<td></td>
+<td>LCD</td>
+<td>LCD_VSYNC</td>
+<td>EMDIO</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>PE(12)</td>
+<td>PE0</td>
+<td>SPI2</td>
+<td>CSI</td>
+<td>TS_CLK</td>
+<td>CSI_PCLK</td>
+<td>SPI2_CS0</td>
+<td></td>
+<td>EINT14</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PE1</td>
+<td>SPI2</td>
+<td>CSI</td>
+<td>TS_ERR</td>
+<td>CSI_MCLK</td>
+<td>SPI2_CLK</td>
+<td></td>
+<td>EINT15</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PE2</td>
+<td>SPI2</td>
+<td>CSI</td>
+<td>TS_SYNC</td>
+<td>CSI_HSYNC</td>
+<td>SPI2_MOSI</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PE3</td>
+<td>SPI2</td>
+<td>CSI</td>
+<td>TS_DVLD</td>
+<td>CSI_VSYNC</td>
+<td>SPI2_MISO</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PE4</td>
+<td>SDC2</td>
+<td>CSI</td>
+<td>TS_D0</td>
+<td>CSI_D0</td>
+<td>SDC2_D0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PE5</td>
+<td>SDC2</td>
+<td>CSI</td>
+<td>TS_D1</td>
+<td>CSI_D1</td>
+<td>SDC2_D1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PE6</td>
+<td>SDC2</td>
+<td>CSI</td>
+<td>TS_D2</td>
+<td>CSI_D2</td>
+<td>SDC2_D2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PE7</td>
+<td>SDC2</td>
+<td>CSI</td>
+<td>TS_D3</td>
+<td>CSI_D3</td>
+<td>SDC2_D3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PE8</td>
+<td>SDC2</td>
+<td>CSI</td>
+<td>TS_D4</td>
+<td>CSI_D4</td>
+<td>SDC2_CMD</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PE9</td>
+<td>SDC2</td>
+<td>CSI</td>
+<td>TS_D5</td>
+<td>CSI_D5</td>
+<td>SDC2_CLK</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PE10</td>
+<td>UART1</td>
+<td>CSI</td>
+<td>TS_D6</td>
+<td>CSI_D6</td>
+<td>UART1_TX</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PE11</td>
+<td>UART1</td>
+<td>CSI</td>
+<td>TS_D7</td>
+<td>CSI_D7</td>
+<td>UART1_RX</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>PF(6)</td>
+<td>PF0</td>
+<td></td>
+<td>SDC0</td>
+<td>SDC0_D1</td>
+<td></td>
+<td>JTAG_MS1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PF1</td>
+<td></td>
+<td>SDC0</td>
+<td>SDC0_D0</td>
+<td></td>
+<td>JTAG_DI1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PF2</td>
+<td></td>
+<td>SDC0</td>
+<td>SDC0_CLK</td>
+<td></td>
+<td>UART0_TX</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PF3</td>
+<td></td>
+<td>SDC0</td>
+<td>SDC0_CMD</td>
+<td></td>
+<td>JTAG_DO1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PF4</td>
+<td></td>
+<td>SDC0</td>
+<td>SDC0_D3</td>
+<td></td>
+<td>UART0_RX</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PF5</td>
+<td></td>
+<td>SDC0</td>
+<td>SDC0_D2</td>
+<td></td>
+<td>JTAG_CK1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>PG(14)</td>
+<td>PG0</td>
+<td></td>
+<td>GPS</td>
+<td>GPS_CLK</td>
+<td></td>
+<td></td>
+<td></td>
+<td>EINT0</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PG1</td>
+<td></td>
+<td>GPS</td>
+<td>GPS_SIGN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>EINT1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PG2</td>
+<td></td>
+<td>GPS</td>
+<td>GPS_MAG</td>
+<td></td>
+<td></td>
+<td></td>
+<td>EINT2</td>
+<td></td>
+<td>USB0-IDDET</td>
+</tr>
+<tr>
+<td></td>
+<td>PG3</td>
+<td></td>
+<td>UART1</td>
+<td>SDC1_CMD</td>
+<td>MS_BS</td>
+<td>UART1_TX</td>
+<td></td>
+<td>EINT3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PG4</td>
+<td></td>
+<td>UART1</td>
+<td>SDC1_CLK</td>
+<td>MS_CLK</td>
+<td>UART1_RX</td>
+<td></td>
+<td>EINT4</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PG5</td>
+<td></td>
+<td>UART1</td>
+<td>SDC1_D0</td>
+<td>MS_D0</td>
+<td>UART1_CTS</td>
+<td></td>
+<td>EINT5</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PG6</td>
+<td></td>
+<td>UART1</td>
+<td>SDC1_D1</td>
+<td>MS_D1</td>
+<td>UART1_RTS</td>
+<td>UART2_RTS</td>
+<td>EINT6</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PG7</td>
+<td></td>
+<td>UART2</td>
+<td>SDC1_D2</td>
+<td>MS_D2</td>
+<td></td>
+<td>UART2_TX</td>
+<td>EINT7</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PG8</td>
+<td></td>
+<td>UART2</td>
+<td>SDC1_D3</td>
+<td>MS_D3</td>
+<td></td>
+<td>UART2_RX</td>
+<td>EINT8</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PG9</td>
+<td></td>
+<td>SPI1</td>
+<td>SPI1_CS0</td>
+<td>UART3_TX</td>
+<td></td>
+<td></td>
+<td>EINT9</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PG10</td>
+<td></td>
+<td>SPI1</td>
+<td>SPI1_CLK</td>
+<td>UART3_RX</td>
+<td></td>
+<td></td>
+<td>EINT10</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PG11</td>
+<td></td>
+<td>SPI1</td>
+<td>SPI1_MOSI</td>
+<td>UART3_CTS</td>
+<td></td>
+<td></td>
+<td>EINT11</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PG12</td>
+<td></td>
+<td>SPI1</td>
+<td>SPI1_MISO</td>
+<td>UART3_RTS</td>
+<td></td>
+<td></td>
+<td>EINT12</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PG13</td>
+<td>PWM1</td>
+<td>SPI1</td>
+<td>SPI1_CS1</td>
+<td>PWM1</td>
+<td></td>
+<td>UART2_CTS</td>
+<td>EINT13</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>TVOUT</td>
+<td>TVOUT</td>
+<td></td>
+<td>TVOUT</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>USB</td>
+<td>UDM0</td>
+<td>USB0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>UDP0</td>
+<td>USB0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>UDM1</td>
+<td>USB1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>UDP1</td>
+<td>USB1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>VCC_USB</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>TP</td>
+<td>TPX1</td>
+<td></td>
+<td>TP</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>TPX2</td>
+<td></td>
+<td>TP</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>TPY1</td>
+<td></td>
+<td>TP</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>TPY2</td>
+<td></td>
+<td>TP</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>LINEINL</td>
+<td></td>
+<td>LINEIN</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>LINEINR</td>
+<td></td>
+<td>LINEIN</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>MIC1OUTP</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>MIC1OUTN</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>VMIC</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>MICIN2</td>
+<td>MICIN2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>MICIN1</td>
+<td>MICIN1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>VRA1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>VRA2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>AVCC</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>VRP</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>AGND</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>HPR</td>
+<td>AUDIO-OUT</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>HPCOM</td>
+<td>AUDIO-OUT</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>HPCOMFB</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>VCC_HP</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>HPBP</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>HPL</td>
+<td>AUDIO-OUT</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>LRADC</td>
+<td>LRADC0</td>
+<td>LRADC0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>LRADC1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+
+      </div>
+      <div class="dark-box">
+      </div>
+    </div>
+  </body>
+</html>
