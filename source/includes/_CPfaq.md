@@ -2,7 +2,7 @@
 ![C.H.I.P. Pro](images/CHIP-Pro-Straight-Crop.jpg)
 
 ## What are the C.H.I.P. Pro specifications?
-* 1GHz Next Thing Co. GR8 processor - ARM Cortex-A8 with ARMv7 instruction set and NEON instruction set 
+* 1GHz Source Parts GR8 processor - ARM Cortex-A8 with ARMv7 instruction set and NEON instruction set 
 * Mali-400 supporting OpenGL ES1.1 /2.0 and OpenVG 1.1
 * 512MB NAND flash storage
 * 256MB DDR3 RAM
@@ -18,7 +18,7 @@
 C.H.I.P. Pro costs $16.
 
 ## Are there quantity discounts?
-C.H.I.P. Pro is $16 no matter how many you order. But, if you have to ask you should contact [sales@nextthing.co](mailto:sales@nextthing.co). 
+Please contact us: [sales@source.parts](mailto:sales@source.parts). 
 
 ## Is the C.H.I.P. Pro open source?
 Yes, you can see our design files in our [git repository](https://github.com/NextThingCo/CHIP_Pro-Hardware).
@@ -30,7 +30,7 @@ C.H.I.P. is still a huge part of what we do. We made C.H.I.P. Pro and Gadget so 
 Currently, we’re offering the C.H.I.P. Pro Dev kit for $49 in our web store with an estimated shipping by the end of this year. C.H.I.P. Pro will be available in Q1 of 2017.
 
 ##  How many may I order?
-As many or as few as you’d like. 1 to 1 million (or more). For larger orders, hit us up at [sales@nextthing.co](mailto:sales@nextthing.co)
+As many or as few as you’d like. 1 to 1 million (or more). For larger orders, hit us up at [sales@source.parts](mailto:sales@source.parts)
 
 ## When will C.H.I.P. Pro ship?
 C.H.I.P. Pro Dev kits are shipping in late Q4 of 2016 and C.H.I.P. Pro will be available in any quantity starting Q1 of 2017.
